@@ -1,5 +1,7 @@
 @import "wp-defaults";
 
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
+
 // Import Animate CSS
 @import "animate";
 
@@ -10,7 +12,9 @@
 @import "bootstrap-variables";
 
 // Import Bootstrap for Sass
-@import "bootstrap";
+
+// $icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Custom Css
 @import "custom";

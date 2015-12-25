@@ -24,13 +24,61 @@ get_header(); ?>
 		<h1>Janes Enterprises</h1>
 		<hr>
 		<h4><em>Helping you to invest in your future ...</em></h4>
-		<a href="#" title=""><h4><i class="fa fa-chevron-circle-down"></i></h4></a>
+		<a href="#block3" title="" class="mPS2id-clicked" rel='m_PageScroll2id'><h4><i class="fa fa-chevron-circle-down"></i></h4></a>
 		
 	</header>
 	
 </section>
 
-<section class="front-page-block-2">
+
+
+<section id="block3" class="front-page-block-3 mPS2id-target">
+
+	<atricle class="slider">
+
+			<div id="fp-carousel" class="carousel slide container" data-ride="carousel">
+
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#fp-carousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#fp-carousel" data-slide-to="1"></li>
+			    <li data-target="#fp-carousel" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img class="img-responsive" src="http://janes/wp-content/uploads/2015/12/slider1.jpg" alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img class="img-responsive" src="http://janes/wp-content/uploads/2015/12/slider2.jpg" alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    ...
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#fp-carousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#fp-carousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+
+			</div>
+
+		
+	</atricle>
+</section>
+
+<section id="block2" class="front-page-block-2">
 	
 	<div class="service-area container">
 		
@@ -101,6 +149,125 @@ get_header(); ?>
 
 	</div>
 </section>
+
+<section class="front-page-block-4">
+	
+	<div class="featured-block container">
+
+	  	<div class="row">
+
+			<article class="featured-box col-md-6 col-lg-6">
+
+				<div class="featured-content">
+					
+					<div class="featured-header">
+						<h2><i class="fa fa-home fa-3x"></i></h2>
+						<h2>Property Rental & Purchase</h2>
+					</div>
+					<div class="featured-text">
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
+						</p>
+					</div>
+
+					<p>
+						<a href="#" class="btn btn-primary" title="">Learn More</a>
+					</p>
+
+				</div>
+
+			</article>
+
+			<article class="featured-box col-md-6 col-lg-6">
+
+				<div class="featured-content">
+					
+					<div class="featured-header">
+						<h2><i class="fa fa-home fa-3x"></i></h2>
+						<h2>Property Rental & Purchase</h2>
+					</div>
+					<div class="featured-text">
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
+						</p>
+					</div>
+
+					<p>
+						<a href="#" class="btn btn-success" title="">Learn More</a>
+					</p>
+
+				</div>
+
+			</article>
+
+			
+
+		</div>	
+
+		<div class="row">
+
+			<article class="featured-box col-md-6 col-lg-6">
+
+				<div class="featured-content">
+					
+					<div class="featured-header">
+						<h2><i class="fa fa-home fa-3x"></i></h2>
+						<h2>Property Rental & Purchase</h2>
+					</div>
+					<div class="featured-text">
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
+						</p>
+					</div>
+
+					<p>
+						<a href="#" class="btn btn-success" title="">Learn More</a>
+					</p>
+
+				</div>
+
+			</article>
+
+			<article class="featured-box col-md-6 col-lg-6">
+
+				<div class="featured-content">
+					
+					<div class="featured-header">
+						<h2><i class="fa fa-home fa-3x"></i></h2>
+						<h2>Property Rental & Purchase</h2>
+					</div>
+					<div class="featured-text">
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
+						</p>
+					</div>
+
+					<p>
+						<a href="#" class="btn btn-success" title="">Learn More</a>
+					</p>
+
+				</div>
+
+			</article>
+
+		</div>	
+		
+	</div>
+
+</section>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
