@@ -1,0 +1,286 @@
+@import "bourbon/bourbon";
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+html { 
+ 
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	margin-top: 50px;
+	 background: url(http://janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.google-tran {
+	// border: 3px solid yellow;
+	// color: yellow;
+	// float: right;
+	// .pull-left();
+}
+
+/**
+ *
+ * WP Admin Bar Lowering
+ *
+ */
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+@media (max-width: 800px) {
+    .admin-bar .navbar-fixed-top {
+        margin-top: 46px;
+    }
+}
+
+/**
+ *
+ * Front Page Styles
+ *
+ */
+.front-page-block-1 {
+	// background-color: rgba( $gray, .8);
+	// background-color: rgba( $gray-light, .8);
+	// background-color: rgba( $aluminum, .8);
+	background-color: rgba( $jumbo, .8);
+	// background-color: rgba( $aluminum, .8);
+	// background-color: rgba( $aluminum, .8);
+	// background-color: rgba( $aluminum, .8);
+	min-height: 70.5rem;
+	height: 100rem;
+
+}
+
+.front-page-header {
+	text-align: center;
+	padding-bottom: 10rem;
+	h1 {
+		font-family: 'Bevan', cursive;
+		font-size: 9rem;
+		color: $silver;
+	}
+
+	h4 {
+		font-family: 'Vollkorn', serif;
+		font-size: 4rem;
+		color: $silver;
+
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+	}
+}
+
+/**
+ *
+ * Main Content
+ *
+ */
+.content-area {
+	// background-color: $snow;
+	// border: 1px solid red;
+}
+
+.site-main {
+	// border: 1px solid yellow;
+	// background-color: $steel;
+}
+
+
+
+// .top-address-bar {
+
+// 	position: relative;
+// 	display: none;
+
+// 	height: 28px;
+// 	width: 100%;
+	
+// 	.top-address {
+// 		position: fixed;
+// 		top: 0;
+// 		left: 0;
+// 		z-index: 100;
+// 		width: 100%;
+
+// 		background-color: black;
+
+// 		color: gray;
+// 		padding-top: .5rem;
+// 		padding-bottom: .5rem;
+
+// 	}
+// }
+
+
+
+
+/**
+ *
+ * Widget Styles
+ *
+ */
+
+.widget {
+
+	// border: 1px solid red;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	background-color: $gray-lighter;
+
+	.widget-title {
+		font-size: 3rem;
+		font-weight: 500;
+		font-variant: small-caps;
+		color: lighten( $gray-light, 10% );
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			font-size: 1.5rem;
+			padding-top: 1rem;
+			font-weight: 300;
+
+		}
+	}
+
+	.footer-social {
+		// border: 1px solid red;    
+		padding-top: 2rem;
+
+		span {
+			padding: 3rem;
+		}
+
+	}
+
+	form {
+		label {
+			color: $base;
+			// font-variant: small-caps;
+			font-weight: 300;
+			font-size: 1.8rem;
+		}
+	}
+
+}
+
+/**
+ *
+ * Footer Styles
+ *
+ */
+.footer-container {
+
+}
+
+.footer-main {
+	background-color: $steel;
+	
+	.copyright {
+		padding: 1rem;
+		background-color: $oil;
+
+		p {
+			color: $gray-light;
+			padding-top: .5rem;	
+		}
+
+		a {
+			color: $gray-light;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+
+	.widget {
+
+		color: lighten(grey, 30%);
+		background-color: $steel;
+
+		// @media screen and (min-width: 991px) {
+		// 	background-color: $charcoal;
+		// 	z-index: 1;
+		// 	position: relative;
+			
+		// }
+
+		.widget-title {
+			color: $gray-lighter;
+			padding-bottom: 2rem;
+		}
+
+		a {
+			color: lighten(grey, 30%);
+			
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
