@@ -1,3 +1,7 @@
+// $brand-primary:  #E8CA00;
+$brand-primary:  #FFFC13;
+
+
 @import "bourbon/bourbon";
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Bevan);
@@ -53,33 +57,84 @@ img {
 	// background-color: rgba( $gray, .8);
 	// background-color: rgba( $gray-light, .8);
 	// background-color: rgba( $aluminum, .8);
-	background-color: rgba( $jumbo, .8);
-	// background-color: rgba( $aluminum, .8);
-	// background-color: rgba( $aluminum, .8);
+	// background-color: rgba( $jumbo, .8);
+	background-color: rgba( $steel, .85);
+	// background-color: rgba( $oil, .8);
 	// background-color: rgba( $aluminum, .8);
 	min-height: 70.5rem;
-	height: 100rem;
+	height: 95rem;
+
+	.front-page-header {
+		text-align: center;
+		padding-bottom: 10rem;
+		h1 {
+			font-family: 'Bevan', cursive;
+			font-size: 9rem;
+			color: $silver;
+		}
+
+		h4 {
+			font-family: 'Vollkorn', serif;
+			font-size: 4rem;
+			color: $silver;
+
+			padding-top: 2rem;
+			padding-bottom: 3rem;
+
+			i {
+				color: lighten( $brand-primary, 0%);
+			}
+		}
+
+		@media (max-width: 768px) {
+	    	h1 {
+	    		font-size: 5rem;
+	    	}	
+	    	h4 {
+	    		font-size: 3rem;
+	    	}
+	    }
+	}
 
 }
 
-.front-page-header {
+.front-page-block-2 {
+	background-color: rgba( darken( $brand-primary, 8% ), .95);
 	text-align: center;
-	padding-bottom: 10rem;
-	h1 {
-		font-family: 'Bevan', cursive;
-		font-size: 9rem;
-		color: $silver;
-	}
 
-	h4 {
-		font-family: 'Vollkorn', serif;
-		font-size: 4rem;
-		color: $silver;
-
-		padding-top: 2rem;
+	.service-box {
+		padding-top: 3rem;
 		padding-bottom: 3rem;
+
+		.service-header {
+			min-height: 15rem;
+			height: auto;
+
+			i {
+				// margin-bottom: .5rem;
+			}
+		}
+
+		.service-text {
+			// padding-top: 1rem;
+			// min-height: 150px;
+
+		}
+
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		a {
+			margin-top: 2rem;
+		}
+
+
 	}
+
 }
+
+
 
 /**
  *

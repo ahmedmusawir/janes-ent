@@ -81,9 +81,13 @@
 		        
 		    </div><!-- /.navbar-collapse --> 
 
-		    <button type="button" class="btn btn-primary btn-xs pull-right google-tran hide" data-toggle="modal" data-target="#myModal">
-				  Translate Site
+		    <!-- <button type="button" class="btn btn-primary btn-xs pull-right google-tran" data-toggle="modal" data-target="#myModal"> -->
+		    <button type="button" class="btn btn-primary btn-xs pull-right google-tran hide" data-toggle="modal" data-target="">
+				  <!-- Translate Site -->
+		        	<?php echo do_shortcode('[prisna-google-website-translator]'); ?>
+
 				</button>
+
   		  </div><!-- /.container-fluid -->
 
 		</nav>
