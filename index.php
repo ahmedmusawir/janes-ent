@@ -13,6 +13,18 @@
  */
 
 get_header(); ?>
+<section class="content-wrapper">
+
+	<div class="page-header-container">
+		
+		<header class="page-header container">
+		
+			<h1> <?php wp_title(); ?></h1>
+
+		</header>
+
+	</div>
+
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-md-8" role="main">
@@ -53,6 +65,7 @@ get_header(); ?>
 		<aside class="sidebar col-md-4"><?php get_sidebar(); ?></aside>
 	</div><!-- #primary -->
 
+</section> <!-- End content-wrapper -->
 <?php
 
 get_footer();
