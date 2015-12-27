@@ -11164,17 +11164,50 @@ img {
 }
 
 .front-page-block-4 {
-  background-color: rgba(14, 14, 14, 0.8);
+  background: url(http://janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
   color: lightgray;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .front-page-block-4 .featured-box .featured-content {
-  background-color: rgba(119, 119, 119, 0.8);
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
   margin-bottom: .5rem;
 }
 
+.front-page-block-4 .featured-box .featured-content img {
+  width: 100%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.front-page-block-4 .featured-box .featured-content:hover {
+  background-color: #acaa00;
+  color: black;
+}
+
+.front-page-block-4 .featured-box .featured-content:hover img {
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  -webkit-transform: scale(0.9) rotate(-3deg);
+  -ms-transform: scale(0.9) rotate(-3deg);
+  transform: scale(0.9) rotate(-3deg);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .front-page-block-4 .featured-box .featured-content .featured-header {
-  min-height: 15rem;
+  min-height: 8rem;
   height: auto;
 }
 
@@ -11184,6 +11217,54 @@ img {
 
 .front-page-block-4 .featured-box .featured-content a {
   margin-top: 2rem;
+  background-color: transparent;
+}
+
+.front-page-block-4 .featured-box .featured-content a:hover {
+  background-color: #333333;
+  border: 1px solid black;
+}
+
+.front-page-block-4 .featured-box .featured-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.front-page-block-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid gray;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.front-page-block-5 .callout-box h2, .front-page-block-5 .callout-box h3 {
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  text-align: center;
+  color: #f3f000;
+}
+
+.front-page-block-5 .callout-box h2 {
+  font-size: 5rem;
+}
+
+.front-page-block-5 .callout-box h3 {
+  font-size: 3rem;
+}
+
+.front-page-block-5 .callout-box #interest {
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media (max-width: 480px) {
+  .front-page-block-5 .callout-box h2 {
+    font-size: 3rem;
+  }
+  .front-page-block-5 .callout-box h3 {
+    font-size: 2rem;
+  }
 }
 
 /**

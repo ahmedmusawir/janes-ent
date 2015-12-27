@@ -18,13 +18,15 @@ get_header(); ?>
 
 	<header class="front-page-header">
 
-		<img class="hidden-xs" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_351x400.png" alt="Janes Enterprise">
-		<img class="hidden-sm hidden-md hidden-lg" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_250x285.png" alt="Janes Enterprise">
+		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_351x400.png" alt="Janes Enterprise">
+		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_250x285.png" alt="Janes Enterprise">
 
-		<h1>Janes Enterprises</h1>
+		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">Janes Enterprises</h1>
 		<hr>
-		<h4><em>Helping you to invest in your future ...</em></h4>
-		<a href="#block3" title="" class="mPS2id-clicked" rel='m_PageScroll2id'><h4><i class="fa fa-chevron-circle-down"></i></h4></a>
+		<h4 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s"><em>Helping you to invest in your future ...</em></h4>
+
+		<button type="button" class="btn btn-success btn-xs google-tran " data-toggle="modal" data-target="#myModal">Translate Site</button>
+		<a href="#block3" title="" class="mPS2id-clicked" rel='m_PageScroll2id'><h4 class="animated infinite bounce"><i class="fa fa-chevron-circle-down"></i></h4></a>
 		
 	</header>
 	
@@ -82,7 +84,7 @@ get_header(); ?>
 	
 	<div class="service-area container">
 		
-		<article class="service-box col-md-4 col-lg-4">
+		<article class="service-box col-md-4 col-lg-4 wow slideInLeft">
 
 			<div class="service-header">
 				<h2><i class="fa fa-home fa-3x"></i></h2>
@@ -124,7 +126,7 @@ get_header(); ?>
 		
 		</article>
 
-		<article class="service-box col-md-4 col-lg-4">
+		<article class="service-box col-md-4 col-lg-4 wow slideInRight">
 
 			<div class="service-header">
 				<h2><i class="fa fa-truck fa-3x"></i></h2>
@@ -159,10 +161,15 @@ get_header(); ?>
 			<article class="featured-box col-md-6 col-lg-6">
 
 				<div class="featured-content">
+
+					<div class="fearured-img">
+						<img src="http://janes/wp-content/uploads/2015/12/featured-1.jpg" alt="">
+					</div>
 					
 					<div class="featured-header">
-						<h2><i class="fa fa-home fa-3x"></i></h2>
-						<h2>Property Rental & Purchase</h2>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
+
 					</div>
 					<div class="featured-text">
 						
@@ -174,7 +181,7 @@ get_header(); ?>
 					</div>
 
 					<p>
-						<a href="#" class="btn btn-primary" title="">Learn More</a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -184,10 +191,15 @@ get_header(); ?>
 			<article class="featured-box col-md-6 col-lg-6">
 
 				<div class="featured-content">
+
+					<div class="fearured-img">
+						<img src="http://janes/wp-content/uploads/2015/12/featured-2.jpg" alt="">
+					</div>
 					
 					<div class="featured-header">
-						<h2><i class="fa fa-home fa-3x"></i></h2>
-						<h2>Property Rental & Purchase</h2>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
+
 					</div>
 					<div class="featured-text">
 						
@@ -199,26 +211,30 @@ get_header(); ?>
 					</div>
 
 					<p>
-						<a href="#" class="btn btn-success" title="">Learn More</a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
 
 			</article>
 
-			
-
-		</div>	
+		</div>	<!-- row end -->
 
 		<div class="row">
 
+			
 			<article class="featured-box col-md-6 col-lg-6">
 
 				<div class="featured-content">
+
+					<div class="fearured-img">
+						<img src="http://janes/wp-content/uploads/2015/12/featured-3.jpg" alt="">
+					</div>
 					
 					<div class="featured-header">
-						<h2><i class="fa fa-home fa-3x"></i></h2>
-						<h2>Property Rental & Purchase</h2>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
+
 					</div>
 					<div class="featured-text">
 						
@@ -230,7 +246,7 @@ get_header(); ?>
 					</div>
 
 					<p>
-						<a href="#" class="btn btn-success" title="">Learn More</a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -240,10 +256,15 @@ get_header(); ?>
 			<article class="featured-box col-md-6 col-lg-6">
 
 				<div class="featured-content">
+
+					<div class="fearured-img">
+						<img src="http://janes/wp-content/uploads/2015/12/featured-4.jpg" alt="">
+					</div>
 					
 					<div class="featured-header">
-						<h2><i class="fa fa-home fa-3x"></i></h2>
-						<h2>Property Rental & Purchase</h2>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
+
 					</div>
 					<div class="featured-text">
 						
@@ -255,16 +276,29 @@ get_header(); ?>
 					</div>
 
 					<p>
-						<a href="#" class="btn btn-success" title="">Learn More</a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
 
 			</article>
 
-		</div>	
+		</div>  <!-- row end -->	
 		
 	</div>
+
+</section>
+
+<section class="front-page-block-5">
+	
+	<article class="callout-box">
+	
+		<h2 id="interest">Interested?</h2>
+		<h2>Call Us at 1.404.218.1998</h2>
+		<h2>Visit Our Office at</h2>
+		<h3>2657 Ashleigh Lane, STE 300, Alpharetta, GA 30004</h3>
+
+	</article>
 
 </section>
 
@@ -276,6 +310,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
 				// get_template_part( 'template-parts/content', 'page' );
+				the_content();
 				
 			endwhile; // End of the loop.
 			?>

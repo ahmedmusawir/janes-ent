@@ -156,22 +156,47 @@ img {
 }
 
 .front-page-block-4 {
-	 // background: url(http://janes/wp-content/uploads/2015/12/bg-repeat.jpg) repeat center center fixed; 
-	background-color: rgba( darken( $jet, 8% ), .8);
+	background: url(http://janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
 	color: lightgray;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 
 
 	.featured-box {
 
-
 		.featured-content {
-			background-color: rgba( darken( $gray-light, 0% ), .8);
+
+			text-align: center;
+			background-color: rgba( darken( $oil, 0% ), .8);
+			img {
+				width: 100%;
+				@include transition(all 2.0s ease-in-out);
+
+			}
+
+			@include transition(all 2.0s ease-in-out);
+
+			&:hover {
+				background-color: darken( $brand-primary, 20% );
+				color: black;
+				img {
+					@include transform(translateY(50px));
+					@include transform(scale(0.9) rotate(-3deg));
+					@include transform-origin(center top);
+					@include transform-style(preserve-3d);
+				}
+			}
 
 			// padding: .5rem;
 			margin-bottom: .5rem;
 
 				.featured-header {
-					min-height: 15rem;
+					min-height: 8rem;
 					height: auto;
 
 					i {
@@ -191,11 +216,68 @@ img {
 
 				a {
 					margin-top: 2rem;
+					background-color: transparent;
+
+					&:hover {
+						background-color: $oil;
+						border: 1px solid black;
+					}
+				}
+
+				p {
+					font-size: 1.8rem;
+					font-weight: 300;
+					padding: 1rem;
 				}
 
 
 			}
 
+	}
+
+
+}
+
+.front-page-block-5 {
+
+	background-color: rgba( darken( $jet, 20% ), .5);
+	border: 1px solid gray;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+
+
+	.callout-box {
+
+		h2,h3 {
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		text-align: center;
+		// text-transform: uppercase;
+		color: darken( $brand-primary, 6%);
+		}
+
+		h2 {
+			font-size: 5rem;
+		}
+
+		h3 {
+			font-size: 3rem;
+		}
+
+		#interest {
+			color: lighten( red, 0% );
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			// border: 1px solid red;
+		}
+
+		@media (max-width: 480px) {
+	    	h2 {
+	    		font-size: 3rem;
+	    	}	
+	    	h3 {
+	    		font-size: 2rem;
+	    	}
+	    }
 	}
 
 
