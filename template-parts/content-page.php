@@ -9,10 +9,17 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+
+	<?php if ( has_post_thumbnail() ) : ?> 
+
+		<div class="featured-img">
+			<?php the_post_thumbnail( 'full', array('class' => 'img-responsive'));  ?>
+		</div>
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php

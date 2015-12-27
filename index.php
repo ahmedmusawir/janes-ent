@@ -27,7 +27,7 @@ get_header(); ?>
 
 
 	<div id="primary" class="content-area container">
-		<main id="main" class="site-main col-md-8" role="main">
+		<main id="main" class="site-main col-md-8 col-lg-8" role="main">
 
 		<?php
 		if ( have_posts() ) :
@@ -63,6 +63,7 @@ get_header(); ?>
 		</main><!-- #main -->
 
 		<aside class="sidebar col-md-4"><?php get_sidebar(); ?></aside>
+		
 	</div><!-- #primary -->
 
 </section> <!-- End content-wrapper -->

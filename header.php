@@ -53,7 +53,7 @@
 		            <span class="icon-bar"></span>
 		        </button>
 
-		    	<a class="navbar-brand" href="#">Janes Enterprise<img src="<?php echo $siteLogo_mobile;  ?>" alt=""></a>
+		    	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Janes Enterprises<img src="<?php echo $siteLogo_mobile;  ?>" alt=""></a>
 		    	<div class="google-tran">
 		        	<?php //echo do_shortcode('[prisna-google-website-translator]'); ?>
 		        </div>

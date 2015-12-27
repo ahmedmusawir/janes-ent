@@ -24,9 +24,14 @@ function janes_ent_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
+	$time_now = esc_attr( get_the_date() );
+
+	// echo '<h1>' .  $time_now . '</h1>';
+
 	$posted_on = sprintf(
 		esc_html_x( 'Posted on %s', 'post date', 'janes-ent' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_now . '</a>'
+		// '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(

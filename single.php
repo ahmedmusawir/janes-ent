@@ -9,13 +9,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section class="content-wrapper">
+
+	<div class="page-header-container">
+		
+		<header class="page-header container">
+		
+			<h1> <?php wp_title(); ?></h1>
+
+		</header>
+
+	</div>
+
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main col-md-8 col-lg-8" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', 'page' );
 
 			the_post_navigation();
 
@@ -28,8 +40,13 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
+
+		<aside class="sidebar col-md-4"><?php get_sidebar(); ?></aside>
+
 	</div><!-- #primary -->
 
+</section> <!-- End content-wrapper -->
+
+
 <?php
-get_sidebar();
 get_footer();

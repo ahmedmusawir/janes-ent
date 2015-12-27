@@ -160,7 +160,7 @@ get_header(); ?>
 
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content">
+				<div class="featured-content wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
 						<img src="http://janes/wp-content/uploads/2015/12/featured-1.jpg" alt="">
@@ -190,7 +190,7 @@ get_header(); ?>
 
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content">
+				<div class="featured-content wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
 						<img src="http://janes/wp-content/uploads/2015/12/featured-2.jpg" alt="">
@@ -225,7 +225,7 @@ get_header(); ?>
 			
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content">
+				<div class="featured-content  wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
 
 					<div class="fearured-img">
 						<img src="http://janes/wp-content/uploads/2015/12/featured-3.jpg" alt="">
@@ -255,7 +255,7 @@ get_header(); ?>
 
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content">
+				<div class="featured-content  wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
 
 					<div class="fearured-img">
 						<img src="http://janes/wp-content/uploads/2015/12/featured-4.jpg" alt="">

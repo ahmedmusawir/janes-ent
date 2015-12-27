@@ -11057,6 +11057,7 @@ body {
   margin-top: 50px;
   background: url(http://janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed;
   background-size: cover;
+  display: none;
 }
 
 img {
@@ -11274,6 +11275,7 @@ img {
  */
 .content-wrapper {
   background-color: rgba(102, 102, 102, 0.85);
+  padding-bottom: 5rem;
 }
 
 .content-area {
@@ -11317,6 +11319,77 @@ img {
   margin-bottom: 1rem;
   margin-right: 0rem;
   margin-left: .1rem;
+}
+
+.blog-post .entry-header {
+  margin-bottom: 2.5rem;
+  margin-left: 1.3rem;
+}
+
+.blog-post .entry-header h1, .blog-post .entry-header h2 {
+  font-size: 3.5rem;
+  font-variant: small-caps;
+  font-weight: 300;
+  padding-top: 2rem;
+}
+
+.blog-post .featured-img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.blog-post .featured-img:hover {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transform: scale(0.9) rotate(0deg);
+  -ms-transform: scale(0.9) rotate(0deg);
+  transform: scale(0.9) rotate(0deg);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  opacity: .5;
+}
+
+.blog-post .only-text {
+  margin-left: 1.2rem;
+}
+
+.blog-post .entry-footer {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.blog-post .moretag {
+  display: block;
+  margin-top: 3rem;
+}
+
+/**
+ *
+ * Single Page w Sidebar
+ *
+ */
+.single-page {
+  background-color: rgba(234, 234, 234, 0.8);
+}
+
+.single-page img {
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.single-page .entry-content {
+  padding: 3rem;
+  padding-top: 5rem;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 /**
@@ -11381,7 +11454,7 @@ img {
  *
  */
 .footer-main {
-  background-color: #666666;
+  background-color: #4d4d4d;
 }
 
 .footer-main .copyright {
@@ -11404,7 +11477,7 @@ img {
 
 .footer-main .widget {
   color: #cccccc;
-  background-color: #666666;
+  background-color: #4d4d4d;
 }
 
 .footer-main .widget .widget-title {

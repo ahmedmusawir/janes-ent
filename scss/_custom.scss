@@ -20,6 +20,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+	display: none;
+
+}
+
+#content {
+	// display: none;
 }
 
 img {
@@ -294,6 +301,7 @@ img {
 .content-wrapper {
 
 	background-color: rgba( darken( $steel, 0% ), .85);
+	padding-bottom: 5rem;
 
 
 } 
@@ -351,11 +359,78 @@ img {
 	margin-right: 0rem;
 	margin-left: .1rem;
 
+	.entry-header {
+		margin-bottom: 2.5rem;
+		margin-left: 1.3rem;
+
+		h1, h2 {
+			font-size: 3.5rem;
+			font-variant: small-caps;
+			font-weight: 300;
+			padding-top: 2rem;
+
+		}
+	}
+
+	.featured-img {
+		
+		@include transition(all 1.0s ease-in-out);
+
+		&:hover {
+			@include transform(translateY(0px));
+			@include transform(scale(0.9) rotate(0deg));
+			@include transform-origin(center top);
+			@include transform-style(preserve-3d);
+			opacity: .5;
+		}
+
+	}
+
 	.entry-content {
 		// border: 1px solid red;
+
 	}
+
+	.only-text {
+		margin-left: 1.2rem;
+	}
+
 	.entry-footer {
 		// border: 1px solid blue;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
+
+	.moretag {
+		display: block;
+		margin-top: 3rem;
+	}
+
+}
+
+/**
+ *
+ * Single Page w Sidebar
+ *
+ */
+.single-page {
+
+	background-color: rgba( lighten( $gray-light, 45% ), .8);
+
+	img {
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.entry-content {
+		// border: 1px solid red;
+
+		padding: 3rem;
+		padding-top: 5rem;
+		font-size: 2rem;
+		font-weight: 200;
 	}
 
 }
@@ -437,12 +512,9 @@ img {
  * Footer Styles
  *
  */
-.footer-container {
-
-}
 
 .footer-main {
-	background-color: $steel;
+	background-color: darken( $steel, 10% );
 	
 	.copyright {
 		padding: 1rem;
@@ -464,7 +536,7 @@ img {
 	.widget {
 
 		color: lighten(grey, 30%);
-		background-color: $steel;
+		background-color: darken( $steel, 10% );
 
 		// @media screen and (min-width: 991px) {
 		// 	background-color: $charcoal;
