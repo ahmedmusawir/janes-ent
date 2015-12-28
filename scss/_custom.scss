@@ -417,7 +417,11 @@ img {
 
 	background-color: rgba( lighten( $gray-light, 45% ), .8);
 
-	img {
+	h1, h2, h3, h4, h5 {
+		color: lighten( $gray-light, 5% );
+	}
+
+	.img-featured {
 		width: 100%;
 		height: auto;
 		padding-right: 0;

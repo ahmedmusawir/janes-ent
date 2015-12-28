@@ -11379,7 +11379,11 @@ img {
   background-color: rgba(234, 234, 234, 0.8);
 }
 
-.single-page img {
+.single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
+  color: #848484;
+}
+
+.single-page .img-featured {
   width: 100%;
   height: auto;
   padding-right: 0;

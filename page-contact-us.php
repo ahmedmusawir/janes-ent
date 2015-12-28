@@ -37,7 +37,7 @@ get_header(); ?>
 		
 		<div class="container">
 
-			<article class="col-content com-md-6 col-lg-6">
+			<article class="col-content col-sm-6 col-md-6 col-lg-6">
 				<div class="contact-header-txt">
 		  			<h3>Our Office</h3>
 			  	</div>
@@ -63,7 +63,7 @@ get_header(); ?>
 				</div>
 
 			</article>
-			<article class="col-form com-md-6 col-lg-6">
+			<article class="col-form col-sm-6 com-md-6 col-lg-6">
 				
 				<div class="contact-header-txt">
 				  	<h3>Contact Us</h3>
@@ -80,8 +80,8 @@ get_header(); ?>
 				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleInputFile">File input</label>
-				    <input type="file" id="exampleInputFile">
+				    <label for="exampleInputFile">Your Message</label>
+				    <textarea class="form-control" rows="10" name=""></textarea>
 				    <p class="help-block">Example block-level help text here.</p>
 				  </div>
 				  <div class="checkbox">
