@@ -31,7 +31,7 @@
 		</header><!-- .entry-header -->
 		
 		<div class="featured-img col-md-5 col-lg-5">
-			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'medium', array('class' => 'img-thumbnail'));  ?></a>
+			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
 		</div>
 		<div class="post-text  col-md-7 col-lg-7">
 
@@ -43,7 +43,6 @@
 					) );
 					
 				?>
-
 				<?php	
 
 					wp_link_pages( array(
