@@ -14,12 +14,13 @@
 
 get_header(); ?>
 
+
 <section class="front-page-block-1">
 
 	<header class="front-page-header">
 
-		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_351x400.png" alt="Janes Enterprise">
-		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janes/wp-content/uploads/2015/12/ERA_Version-1_250x285.png" alt="Janes Enterprise">
+		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="wp-content/uploads/2015/12/ERA_Version-1_351x400.png" alt="Janes Enterprise">
+		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="wp-content/uploads/2015/12/ERA_Version-1_250x285.png" alt="Janes Enterprise">
 
 		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">Janes Enterprises</h1>
 		<hr>
@@ -50,13 +51,13 @@ get_header(); ?>
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img class="img-responsive" src="http://janes/wp-content/uploads/2015/12/slider1.jpg" alt="...">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider1.jpg" alt="...">
 			      <div class="carousel-caption">
 			        ...
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img class="img-responsive" src="http://janes/wp-content/uploads/2015/12/slider2.jpg" alt="...">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider2.jpg" alt="...">
 			      <div class="carousel-caption">
 			        ...
 			      </div>
@@ -163,7 +164,7 @@ get_header(); ?>
 				<div class="featured-content wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="http://janes/wp-content/uploads/2015/12/featured-1.jpg" alt="">
+						<img src="wp-content/uploads/2015/12/featured-1.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
@@ -193,7 +194,7 @@ get_header(); ?>
 				<div class="featured-content wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="http://janes/wp-content/uploads/2015/12/featured-2.jpg" alt="">
+						<img src="wp-content/uploads/2015/12/featured-2.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
@@ -225,10 +226,10 @@ get_header(); ?>
 			
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content  wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+				<div class="featured-content  wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="http://janes/wp-content/uploads/2015/12/featured-3.jpg" alt="">
+						<img src="wp-content/uploads/2015/12/featured-3.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
@@ -255,10 +256,10 @@ get_header(); ?>
 
 			<article class="featured-box col-md-6 col-lg-6">
 
-				<div class="featured-content  wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+				<div class="featured-content  wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="http://janes/wp-content/uploads/2015/12/featured-4.jpg" alt="">
+						<img src="wp-content/uploads/2015/12/featured-4.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">

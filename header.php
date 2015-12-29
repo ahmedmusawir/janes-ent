@@ -17,6 +17,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
+
 <?php wp_head(); ?>
 </head>
 
@@ -114,4 +116,26 @@
 	  </div>
 	</div>
 
+	<style type="text/css">
+
+		html {
+			
+		}
+		
+		#content {
+			font-family: 'Raleway', sans-serif;
+			margin-top: 50px;
+			background: url(http://localhost/_janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+
+			display: none;
+			
+		}
+
+	</style>
+
 	<div id="content" class="site-content">
+

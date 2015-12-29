@@ -20,26 +20,25 @@
 		<div class="row">
 		
 
-			<article class="img-box col-md-6">
+			<article class="img-box col-md-5">
 
-			<aside id="text-2" class="widget widget_text">
+				<aside id="text-2" class="widget widget_text">
 
-				<?php 
-					if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-						return;
-					}
+					<?php 
+						if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
+							return;
+						}
 
-					dynamic_sidebar( 'footer-sidebar-1' ); 
+						dynamic_sidebar( 'footer-sidebar-1' ); 
 
-				?>
+					?>
 
-		   </aside>
+			   	</aside>
 
 			
 			</article>
 
-			
-			<article class="img-box col-md-3">
+			<article class="img-box col-md-4">
 
 				<aside id="nav_menu-2" class="widget widget_nav_menu">
 
@@ -56,6 +55,8 @@
 			    </aside>
 
 			</article>
+
+			
 
 			<article class="img-box col-md-3">
 
@@ -74,6 +75,9 @@
 			   	</aside>
 			
 			</article>
+
+	
+ 
 
 	</div>
 

@@ -11052,13 +11052,6 @@ button.close {
   }
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
-  margin-top: 50px;
-  background: url(http://janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed;
-  background-size: cover;
-  display: none;
-}
 
 img {
   max-width: 100%;
@@ -11165,7 +11158,7 @@ img {
 }
 
 .front-page-block-4 {
-  background: url(http://janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
+  background: url(http://localhost/_janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: lightgray;
   padding-top: 10rem;
