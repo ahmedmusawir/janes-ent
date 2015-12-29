@@ -168,7 +168,7 @@ img {
 }
 
 .front-page-block-4 {
-	background: url(http://janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
+	background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -362,17 +362,43 @@ img {
 	padding: 1rem;
 	margin-bottom: 1rem;
 	margin-right: 0rem;
-	margin-left: .1rem;
+	margin-left: .5rem;
 
 	.entry-header {
+		background-color: rgba( darken( $gray-light, 50% ), .65);
+		box-shadow: 3px 3px 8px $gray-light;
+
 		margin-bottom: 2.5rem;
 		margin-left: 1.3rem;
+		margin-right: 1.3rem;
 
 		h1, h2 {
 			font-size: 3.5rem;
 			font-variant: small-caps;
 			font-weight: 300;
 			padding-top: 2rem;
+			padding-left: 2rem;
+
+			a {
+				color: lighten( $gray-light, 20% );
+				text-decoration: none;
+				&:hover {
+					color: darken( $brand-primary, 10% );
+				}
+			}
+
+
+		}
+		.entry-meta {
+			padding-bottom: 1rem;
+			padding-left: 2rem;
+			color: $gray-lighter;
+
+			a {
+				color: darken( $brand-primary, 10% );
+			}
+
+
 		}
 	}
 
@@ -396,8 +422,8 @@ img {
 	}
 
 	.only-text {
-		margin-left: 1.2rem;
-		margin-right: 1rem;
+		margin-left: 1.3rem;
+		margin-right: 1.4rem;
 	}
 
 	.entry-footer {
@@ -648,6 +674,12 @@ img {
 			background-color: rgba( darken( $oil, 10% ), .5);
 			margin-bottom: .2rem;
 			padding: 1rem;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+				background-color: $steel;
+
+			}
 		}
 
 		a {
