@@ -1,5 +1,7 @@
 // $brand-primary:  #E8CA00;
-$brand-primary:  #FFFC13;
+// $brand-primary:  #FFFC13;
+// $brand-primary: #FF6600;
+$brand-primary: #FF8300;
 
 
 @import "bourbon/bourbon";
@@ -94,7 +96,7 @@ img {
 			padding-bottom: 3rem;
 
 			i {
-				color: lighten( $brand-primary, 0%);
+				color: lighten( $silver, 0%);
 			}
 		}
 
@@ -110,10 +112,19 @@ img {
 
 }
 
+/**
+ *
+ * Services Area
+ *
+ */
+
+
 .front-page-block-2 {
-	background-color: rgba( darken( $brand-primary, 8% ), .95);
+	background-color: rgba( darken( $brand-primary, 10% ), .9);
 	text-align: center;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+	color: darken( $gray-lighter, 5% );
 
 	.service-box {
 		padding-top: 3rem;
@@ -131,6 +142,8 @@ img {
 		.service-text {
 			// padding-top: 1rem;
 			// min-height: 150px;
+			font-size: 1.7rem;
+			font-weight: 300;
 
 		}
 
@@ -146,6 +159,13 @@ img {
 	}
 
 }
+
+/**
+ *
+ * Frontpage Slider 
+ *
+ */
+
 
 .front-page-block-3 {
 
@@ -167,12 +187,19 @@ img {
 
 }
 
+/**
+ *
+ * Featured Section
+ *
+ */
+
+
 .front-page-block-4 {
-	background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	// background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
+	// -webkit-background-size: cover;
+	//   -moz-background-size: cover;
+	//   -o-background-size: cover;
+	//   background-size: cover;
 
 	color: lightgray;
 	padding-top: 10rem;
@@ -194,7 +221,7 @@ img {
 			@include transition(all 2.0s ease-in-out);
 
 			&:hover {
-				background-color: darken( $brand-primary, 20% );
+				background-color: darken( $brand-primary, 0% );
 				color: black;
 				img {
 					@include transform(translateY(50px));
@@ -228,11 +255,13 @@ img {
 
 				a {
 					margin-top: 2rem;
+					margin-bottom: 3rem;
 					background-color: transparent;
+					border: 2px solid $gray-light;
 
 					&:hover {
 						background-color: $oil;
-						border: 1px solid black;
+						border: 2px solid black;
 					}
 				}
 
@@ -240,6 +269,8 @@ img {
 					font-size: 1.8rem;
 					font-weight: 300;
 					padding: 1rem;
+					padding-right: 3rem;
+					padding-left: 3rem;
 				}
 
 
@@ -249,6 +280,13 @@ img {
 
 
 }
+
+/**
+ *
+ * Frontpage Call Out Section
+ *
+ */
+
 
 .front-page-block-5 {
 
@@ -261,11 +299,13 @@ img {
 	.callout-box {
 
 		h2,h3 {
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		text-align: center;
-		// text-transform: uppercase;
-		color: darken( $brand-primary, 6%);
+			font-family: 'Bevan', cursive;
+			font-variant: small-caps;
+			text-align: center;
+			// text-transform: uppercase;
+			color: lighten( $brand-info, 25%);
+			// color: lighten( $steel, 50%);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		}
 
 		h2 {
@@ -277,7 +317,7 @@ img {
 		}
 
 		#interest {
-			color: lighten( red, 0% );
+			color: lighten( $brand-primary, 0% );
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			// border: 1px solid red;
 		}
@@ -477,10 +517,11 @@ img {
  */
 .contact-content {
 
-	background-color: rgba( lighten( $brand-primary, 15% ), .8);
+	background-color: rgba( lighten( $brand-primary, 10% ), .6);
 	// background-color: rgba( lighten( $gray-light, 45% ), .8);
 	// border: 1px solid red;
 	margin-bottom: 6rem;
+	color: darken( $smoke, 0% );
 
 
 	.pg-header-txt {
@@ -540,7 +581,7 @@ img {
 						color: darken( $brand-primary, 30%);
 
 						&:hover {
-							color: red;
+							color: $smoke;
 						}
 					}
 				}

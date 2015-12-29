@@ -11108,7 +11108,7 @@ img {
 }
 
 .front-page-block-1 .front-page-header h4 i {
-  color: #fffc13;
+  color: #efefef;
 }
 
 @media (max-width: 768px) {
@@ -11120,10 +11120,17 @@ img {
   }
 }
 
+/**
+ *
+ * Services Area
+ *
+ */
 .front-page-block-2 {
-  background-color: rgba(233, 230, 0, 0.95);
+  background-color: rgba(204, 105, 0, 0.9);
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  color: #e2e2e2;
 }
 
 .front-page-block-2 .service-box {
@@ -11136,6 +11143,11 @@ img {
   height: auto;
 }
 
+.front-page-block-2 .service-box .service-text {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
 .front-page-block-2 .service-box h2 {
   font-size: 2.5rem;
 }
@@ -11144,6 +11156,11 @@ img {
   margin-top: 2rem;
 }
 
+/**
+ *
+ * Frontpage Slider 
+ *
+ */
 .front-page-block-3 {
   background-color: #1f1f1f;
 }
@@ -11161,9 +11178,12 @@ img {
   padding-top: 2rem;
 }
 
+/**
+ *
+ * Featured Section
+ *
+ */
 .front-page-block-4 {
-  background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
   color: lightgray;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -11184,7 +11204,7 @@ img {
 }
 
 .front-page-block-4 .featured-box .featured-content:hover {
-  background-color: #acaa00;
+  background-color: #ff8300;
   color: black;
 }
 
@@ -11215,20 +11235,29 @@ img {
 
 .front-page-block-4 .featured-box .featured-content a {
   margin-top: 2rem;
+  margin-bottom: 3rem;
   background-color: transparent;
+  border: 2px solid #777777;
 }
 
 .front-page-block-4 .featured-box .featured-content a:hover {
   background-color: #333333;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .front-page-block-4 .featured-box .featured-content p {
   font-size: 1.8rem;
   font-weight: 300;
   padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
+/**
+ *
+ * Frontpage Call Out Section
+ *
+ */
 .front-page-block-5 {
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid gray;
@@ -11240,7 +11269,8 @@ img {
   font-family: 'Bevan', cursive;
   font-variant: small-caps;
   text-align: center;
-  color: #f3f000;
+  color: #c5e9f3;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .front-page-block-5 .callout-box h2 {
@@ -11252,7 +11282,7 @@ img {
 }
 
 .front-page-block-5 .callout-box #interest {
-  color: red;
+  color: #ff8300;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -11340,7 +11370,7 @@ img {
 }
 
 .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-  color: #dfdc00;
+  color: #cc6900;
 }
 
 .blog-post .entry-header .entry-meta {
@@ -11350,7 +11380,7 @@ img {
 }
 
 .blog-post .entry-header .entry-meta a {
-  color: #dfdc00;
+  color: #cc6900;
 }
 
 .blog-post .featured-img {
@@ -11424,8 +11454,9 @@ img {
  *
  */
 .contact-content {
-  background-color: rgba(255, 253, 95, 0.8);
+  background-color: rgba(255, 156, 51, 0.6);
   margin-bottom: 6rem;
+  color: #eeeeee;
 }
 
 .contact-content .pg-header-txt {
@@ -11483,11 +11514,11 @@ img {
 }
 
 .contact-content .container .col-content .contact-social span a {
-  color: #797700;
+  color: #663400;
 }
 
 .contact-content .container .col-content .contact-social span a:hover {
-  color: red;
+  color: #EEEEEE;
 }
 
 /**

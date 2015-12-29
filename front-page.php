@@ -76,7 +76,6 @@ get_header(); ?>
 			  </a>
 
 			</div>
-
 		
 	</atricle>
 </section>
@@ -152,6 +151,19 @@ get_header(); ?>
 
 	</div>
 </section>
+
+<style type="text/css" media="screen">
+
+	.front-page-block-4 {
+		background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+	
+</style>
+
 
 <section class="front-page-block-4">
 	
