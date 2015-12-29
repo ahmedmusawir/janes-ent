@@ -125,7 +125,7 @@
 		#content {
 			font-family: 'Raleway', sans-serif;
 			margin-top: 50px;
-			background: url(http://localhost/_janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
+			background: url(http://janesnew/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;

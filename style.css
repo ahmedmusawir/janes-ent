@@ -11052,6 +11052,10 @@ button.close {
   }
 }
 
+.navbar {
+  background-color: #38391d;
+  box-shadow: 5px 5px 8px #555555;
+}
 
 img {
   max-width: 100%;
@@ -11158,7 +11162,7 @@ img {
 }
 
 .front-page-block-4 {
-  background: url(http://localhost/_janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
+  background: url(http://janes/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: lightgray;
   padding-top: 10rem;
@@ -11351,6 +11355,7 @@ img {
 
 .blog-post .only-text {
   margin-left: 1.2rem;
+  margin-right: 1rem;
 }
 
 .blog-post .entry-footer {
@@ -11563,6 +11568,12 @@ img {
 .footer-main .widget .widget-title {
   color: #eeeeee;
   padding-bottom: 2rem;
+}
+
+.footer-main .widget li {
+  background-color: rgba(26, 26, 26, 0.5);
+  margin-bottom: .2rem;
+  padding: 1rem;
 }
 
 .footer-main .widget a {

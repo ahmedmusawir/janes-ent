@@ -11,6 +11,7 @@
 
 ?>
 
+
 <div class="footer-container">
 
 	<footer class="footer-main">
@@ -20,7 +21,7 @@
 		<div class="row">
 		
 
-			<article class="img-box col-md-5">
+			<article class="img-box col-md-4">
 
 				<aside id="text-2" class="widget widget_text">
 
@@ -58,7 +59,7 @@
 
 			
 
-			<article class="img-box col-md-3">
+			<article class="img-box col-md-4">
 
 			    <aside id="recent-posts-2" class="widget widget_recent_entries">
 
@@ -93,8 +94,9 @@
 
 <?php wp_footer(); ?>
 
-<!-- Latest compiled and minified JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+
+	</div> <!-- End of id="content" class="site-content" -->
+</div> <!-- End of id="page" class="site" -->
 
 </body>
 </html>

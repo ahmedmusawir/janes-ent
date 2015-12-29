@@ -13,16 +13,21 @@ html {
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
-	margin-top: 50px;
-	 background: url(http://janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	// font-family: 'Raleway', sans-serif;
+	// margin-top: 50px;
+	//  background: url(http://janes/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
+ //  -webkit-background-size: cover;
+ //  -moz-background-size: cover;
+ //  -o-background-size: cover;
+ //  background-size: cover;
 
-	display: none;
+	// display: none;
 
+}
+
+.navbar {
+	background-color: darken( #595B2E, 10% );
+	box-shadow: 5px 5px 8px $gray;
 }
 
 #content {
@@ -392,7 +397,7 @@ img {
 
 	.only-text {
 		margin-left: 1.2rem;
-		
+		margin-right: 1rem;
 	}
 
 	.entry-footer {
@@ -639,8 +644,16 @@ img {
 			padding-bottom: 2rem;
 		}
 
+		li {
+			background-color: rgba( darken( $oil, 10% ), .5);
+			margin-bottom: .2rem;
+			padding: 1rem;
+		}
+
 		a {
+			// border: 1px solid black;
 			color: lighten(grey, 30%);
+
 			
 			&:hover {
 				color: white;
