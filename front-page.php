@@ -19,8 +19,8 @@ get_header(); ?>
 
 	<header class="front-page-header">
 
-		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="wp-content/uploads/2015/12/ERA_Version-1_351x400.png" alt="Janes Enterprise">
-		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="wp-content/uploads/2015/12/ERA_Version-1_250x285.png" alt="Janes Enterprise">
+		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janesnew/wp-content/uploads/2015/12/Original_Janes_logo_final_transparent_E_350.png" alt="Janes Enterprise">
+		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janesnew/wp-content/uploads/2015/12/Original_Janes_logo_final_transparent_E_250.png" alt="Janes Enterprise">
 
 		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">Janes Enterprises</h1>
 		<hr>
@@ -84,7 +84,7 @@ get_header(); ?>
 	
 	<div class="service-area container">
 		
-		<article class="service-box col-md-4 col-lg-4 wow slideInLeft">
+		<article id="left" class="service-box col-md-4 col-lg-4 wow slideInLeft">
 
 			<div class="service-header">
 				<h2><i class="fa fa-home fa-3x"></i></h2>
@@ -105,7 +105,7 @@ get_header(); ?>
 		
 		</article>
 
-		<article class="service-box col-md-4 col-lg-4">
+		<article id="middle" class="service-box col-md-4 col-lg-4">
 
 			<div class="service-header">
 				<h2><i class="fa fa-gavel fa-3x"></i></h2>
@@ -126,7 +126,7 @@ get_header(); ?>
 		
 		</article>
 
-		<article class="service-box col-md-4 col-lg-4 wow slideInRight">
+		<article id="right" class="service-box col-md-4 col-lg-4 wow slideInRight">
 
 			<div class="service-header">
 				<h2><i class="fa fa-truck fa-3x"></i></h2>

@@ -11053,8 +11053,53 @@ button.close {
 }
 
 .navbar {
-  background-color: #38391d;
+  background-color: rgba(89, 89, 89, 0.8);
   box-shadow: 5px 5px 8px #555555;
+  border-bottom: 1px solid #555555;
+}
+
+.navbar .navbar-brand {
+  color: #d5d5d5;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.navbar .dropdown-menu {
+  background-color: #101010;
+}
+
+.navbar .dropdown-menu .current-menu-item a {
+  color: white;
+}
+
+.navbar .dropdown-menu li a {
+  color: #d5d5d5;
+}
+
+.navbar .dropdown-menu li a:hover {
+  background-color: #4d4d4d;
+}
+
+.navbar #menu-menu-1 li:hover {
+  background-color: #4d4d4d;
+}
+
+.navbar #menu-menu-1 li a {
+  color: #d5d5d5;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.navbar #menu-menu-1 .current-menu-item {
+  background-color: #4d4d4d;
+}
+
+.navbar #menu-menu-1 .current-menu-item a {
+  background-color: #4d4d4d;
+}
+
+.navbar #menu-menu-1 .current-menu-item a:hover {
+  background-color: #4d4d4d;
 }
 
 img {
@@ -11091,6 +11136,7 @@ img {
 .front-page-block-1 .front-page-header {
   text-align: center;
   padding-bottom: 10rem;
+  padding-top: 6rem;
 }
 
 .front-page-block-1 .front-page-header h1 {
@@ -11126,7 +11172,10 @@ img {
  *
  */
 .front-page-block-2 {
-  background-color: rgba(204, 105, 0, 0.9);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#be8706+0,be8706+100&0.27+0,1+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#be8706+50,be8706+100&0.27+0,1+100 */
+  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), #efaa08) left repeat;
+  background: linear-gradient(rgba(239, 239, 239, 0.8), #efaa08) left repeat;
   text-align: center;
   padding-bottom: 5rem;
   padding-top: 5rem;
@@ -11154,6 +11203,18 @@ img {
 
 .front-page-block-2 .service-box a {
   margin-top: 2rem;
+}
+
+.front-page-block-2 #left {
+  color: darkblue;
+}
+
+.front-page-block-2 #middle {
+  color: purple;
+}
+
+.front-page-block-2 #right {
+  color: black;
 }
 
 /**
@@ -11191,9 +11252,10 @@ img {
 
 .front-page-block-4 .featured-box .featured-content {
   text-align: center;
-  background-color: rgba(51, 51, 51, 0.8);
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  background: -webkit-linear-gradient(#333333, rgba(51, 51, 51, 0.8)) left repeat;
+  background: linear-gradient(#333333, rgba(51, 51, 51, 0.8)) left repeat;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   margin-bottom: .5rem;
 }
 
@@ -11204,7 +11266,9 @@ img {
 }
 
 .front-page-block-4 .featured-box .featured-content:hover {
-  background-color: #ff8300;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-linear-gradient(#777777, #efaa08) left repeat;
+  background: linear-gradient(#777777, #efaa08) left repeat;
   color: black;
 }
 
@@ -11282,7 +11346,7 @@ img {
 }
 
 .front-page-block-5 .callout-box #interest {
-  color: #ff8300;
+  color: #efaa08;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -11370,7 +11434,7 @@ img {
 }
 
 .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-  color: #cc6900;
+  color: #be8706;
 }
 
 .blog-post .entry-header .entry-meta {
@@ -11380,7 +11444,7 @@ img {
 }
 
 .blog-post .entry-header .entry-meta a {
-  color: #cc6900;
+  color: #be8706;
 }
 
 .blog-post .featured-img {
@@ -11454,9 +11518,9 @@ img {
  *
  */
 .contact-content {
-  background-color: rgba(255, 156, 51, 0.6);
+  background-color: rgba(252, 221, 148, 0.6);
   margin-bottom: 6rem;
-  color: #eeeeee;
+  color: black;
 }
 
 .contact-content .pg-header-txt {
@@ -11514,7 +11578,7 @@ img {
 }
 
 .contact-content .container .col-content .contact-social span a {
-  color: #663400;
+  color: #5b4103;
 }
 
 .contact-content .container .col-content .contact-social span a:hover {
