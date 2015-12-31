@@ -11,6 +11,7 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post row'); ?>>
 	
+<!-- <h1>Right Content</h1> -->
 
 	<?php if ( has_post_thumbnail() ) : ?> 
 
@@ -22,18 +23,18 @@
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				}
 
-			//if ( 'post' === get_post_type() ) : ?>
+			if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php janes_ent_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php
-			//endif; ?>
+			endif; ?>
 		</header><!-- .entry-header -->
 		
-		<div class="featured-img col-md-5 col-lg-5">
+		<div class="featured-img col-md-5 col-lg-5 col-md-push-7 col-lg-push-7">
 			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
 		</div>
-		<div class="post-text  col-md-7 col-lg-7">
+		<div class="post-text  col-md-7 col-lg-7  col-md-pull-5 col-lg-pull-5">
 
 			<div class="entry-content">
 				<?php
@@ -67,12 +68,12 @@
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 					}
 
-				//if ( 'post' === get_post_type() ) : ?>
+				if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php janes_ent_posted_on(); ?>
 				</div><!-- .entry-meta -->
 				<?php
-				//endif; ?>
+				endif; ?>
 			</header><!-- .entry-header -->
 
 			<div class="entry-content only-text">

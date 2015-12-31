@@ -53,16 +53,22 @@ get_header(); ?>
 			    <div class="item active">
 			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider1.jpg" alt="...">
 			      <div class="carousel-caption">
-			        ...
+			        
 			      </div>
 			    </div>
 			    <div class="item">
 			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider2.jpg" alt="...">
 			      <div class="carousel-caption">
-			        ...
+			        
 			      </div>
 			    </div>
-			    ...
+			    <div class="item">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slide3.jpg" alt="...">
+			      <div class="carousel-caption">
+			        
+			      </div>
+			    </div>
+			    
 			  </div>
 
 			  <!-- Controls -->
@@ -92,10 +98,8 @@ get_header(); ?>
 			</div>
 			<div class="service-text">
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. 
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
 			</div>
 
@@ -113,10 +117,8 @@ get_header(); ?>
 			</div>
 			<div class="service-text">
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. 
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
 			</div>
 
@@ -134,10 +136,8 @@ get_header(); ?>
 			</div>
 			<div class="service-text">
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. 
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
 			</div>
 

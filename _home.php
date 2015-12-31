@@ -1,6 +1,7 @@
 <?php
 /**
  * The main template file.
+ * Template Name: Blog Image Right
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -25,6 +26,9 @@ get_header(); ?>
 
 	</div>
 
+<!-- <h1>Right Page</h1> -->
+
+<? query_posts('post_type=post&post_status=publish&posts_per_page=3&paged='. get_query_var('paged')); ?>
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-sm-7 col-md-8 col-lg-8" role="main">
@@ -34,12 +38,7 @@ get_header(); ?>
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-
-					<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'janes-ent' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-
-					<!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1> -->
-					<!-- the_archive_title( '<h1 class="page-title">', '</h1>' ); -->
-					<!-- the_archive_description( '<div class="taxonomy-description">', '</div>' ); -->
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 
 			<?php
@@ -53,7 +52,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				get_template_part( 'template-parts/content', 'blog-right' );
 
 			endwhile;
 
@@ -65,6 +64,8 @@ get_header(); ?>
 
 		endif; ?>
 
+		<?php wp_reset_query(); ?>
+
 		</main><!-- #main -->
 
 		<aside class="sidebar col-sm-5 col-md-4 col-lg-4"><?php get_sidebar(); ?></aside>
@@ -75,4 +76,3 @@ get_header(); ?>
 <?php
 
 get_footer();
-
