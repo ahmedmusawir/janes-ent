@@ -54,7 +54,21 @@
 			
 		</div>	
 		<footer class="entry-footer col-md-12 col-lg-12">
-			<?php janes_ent_entry_footer(); ?>
+
+			<?php //janes_ent_entry_footer(); 
+
+				$terms = get_the_terms($post->ID, 'category' );
+				if ($terms && ! is_wp_error($terms)) :
+					$term_slugs_arr = array();
+					foreach ($terms as $term) {
+					    $term_slugs_arr[] = $term->slug;
+					}
+					$terms_slug_str = join( " ", $term_slugs_arr);
+				endif;
+				echo $terms_slug_str;
+
+			?>
+
 		</footer><!-- .entry-footer -->
 
 	<?php else: ?>
@@ -91,7 +105,19 @@
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer only-text">
-				<?php janes_ent_entry_footer(); ?>
+				<?php //janes_ent_entry_footer(); 
+
+				$terms = get_the_terms($post->ID, 'category' );
+				if ($terms && ! is_wp_error($terms)) :
+					$term_slugs_arr = array();
+					foreach ($terms as $term) {
+					    $term_slugs_arr[] = $term->slug;
+					}
+					$terms_slug_str = join( " ", $term_slugs_arr);
+				endif;
+				echo $terms_slug_str;
+
+			?>
 			</footer><!-- .entry-footer -->
 
 

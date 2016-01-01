@@ -9,7 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post row'); ?>>
+<?php 
+$property_price = get_field( 'property_price' );
+
+?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post row'); ?>>
 	
 
 	<?php if ( has_post_thumbnail() ) : ?> 
@@ -19,7 +24,20 @@
 				if ( is_single() ) {
 					the_title( '<h1 class="entry-title">', '</h1>' );
 				} else {
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+
+					// echo "<div class='col-md-7'>";
+			
+				 	the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+
+					// echo "</div>";
+
+					// echo "<div class='col-md-5'>";
+					
+					echo "<h4 class='text-right price-tag'>Price: $property_price</h4>";
+
+					// echo "</div>";
+
+
 				}
 
 			if ( 'post' === get_post_type() ) : ?>
@@ -54,7 +72,19 @@
 			
 		</div>	
 		<footer class="entry-footer col-md-12 col-lg-12">
-			<?php janes_ent_entry_footer(); ?>
+			<?php //janes_ent_entry_footer(); 
+
+				$terms = get_the_terms($post->ID, 'category' );
+				if ($terms && ! is_wp_error($terms)) :
+					$term_slugs_arr = array();
+					foreach ($terms as $term) {
+					    $term_slugs_arr[] = $term->slug;
+					}
+					$terms_slug_str = join( " ", $term_slugs_arr);
+				endif;
+				echo $terms_slug_str;
+
+			?>
 		</footer><!-- .entry-footer -->
 
 	<?php else: ?>
@@ -88,13 +118,65 @@
 						'after'  => '</div>',
 					) );
 				?>
+
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer only-text">
-				<?php janes_ent_entry_footer(); ?>
+				<?php //janes_ent_entry_footer(); 
+
+					$terms = get_the_terms($post->ID, 'category' );
+					if ($terms && ! is_wp_error($terms)) :
+						$term_slugs_arr = array();
+						foreach ($terms as $term) {
+						    $term_slugs_arr[] = $term->slug;
+						}
+						$terms_slug_str = join( " ", $term_slugs_arr);
+					endif;
+					echo $terms_slug_str;
+
+				?>
 			</footer><!-- .entry-footer -->
 
 
 	<?php endif; ?>
 </article><!-- #post-## -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

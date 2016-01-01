@@ -11412,7 +11412,7 @@ img {
 
 /**
  *
- * Blog Style
+ * Blog Styles
  *
  */
 .blog-post {
@@ -11494,6 +11494,86 @@ img {
 .blog-post .moretag {
   display: block;
   margin-top: 3rem;
+}
+
+/**
+ *
+ * Home Properties Styles
+ *
+ */
+.property .entry-header h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.property .entry-header .price-tag {
+  color: #c8c8c8;
+  padding-right: .5rem;
+  padding-bottom: .5rem;
+}
+
+/**
+  *
+  * Land index Styles
+  *
+  */
+.land .entry-header h2 {
+  padding-bottom: 0rem;
+  padding-top: 1rem;
+}
+
+.land .entry-header .price-tag {
+  color: #c8c8c8;
+  padding-right: .5rem;
+  padding-bottom: .5rem;
+}
+
+/**
+  *
+  * Category Sold
+  *
+  */
+.category-sold .entry-header {
+  background-color: #cf0030;
+}
+
+.category-sold .entry-footer {
+  color: #cf0030;
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  font-size: 2rem;
+}
+
+/**
+  *
+  * Category Pending
+  *
+  */
+.category-pending .entry-header {
+  background-color: #005acc;
+}
+
+.category-pending .entry-footer {
+  color: #005acc;
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  font-size: 2rem;
+}
+
+/**
+  *
+  * Category Active
+  *
+  */
+.category-active .entry-header {
+  background-color: #337f00;
+}
+
+.category-active .entry-footer {
+  color: #337f00;
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  font-size: 2rem;
 }
 
 /**
@@ -11690,6 +11770,8 @@ img {
 
 .footer-main .widget {
   border: 0px solid red;
+  padding-right: .5rem;
+  padding-left: .5rem;
   color: #cccccc;
   background-color: #4d4d4d;
 }
@@ -11713,6 +11795,7 @@ img {
 
 .footer-main .widget a {
   color: #cccccc;
+  font-size: 2rem;
 }
 
 .footer-main .widget a:hover {

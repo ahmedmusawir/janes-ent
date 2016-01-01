@@ -497,7 +497,7 @@ img {
 
 /**
  *
- * Blog Style
+ * Blog Styles
  *
  */
 .blog-post {
@@ -582,6 +582,116 @@ img {
 	}
 
 }
+
+/**
+ *
+ * Home Properties Styles
+ *
+ */
+
+ .property {
+ 	// border: 1px solid yellow;
+
+ 	.entry-header {
+ 		// border: 2px dotted dodgerblue;
+ 		h2 {
+ 			padding-bottom: 1rem;
+ 			padding-top: 1rem;
+ 		}
+		.price-tag {
+ 			color: darken( $gray-lighter, 15% );
+ 			padding-right: .5rem;
+ 			padding-bottom: .5rem;
+ 		}
+ 	}
+ }
+
+ /**
+  *
+  * Land index Styles
+  *
+  */
+ .land {
+ 	// border: 2px solid red;
+
+ 	.entry-header {
+ 		// border: 2px dotted dodgerblue;
+ 		h2 {
+ 			padding-bottom: 0rem;
+ 			padding-top: 1rem;
+ 		}
+
+ 		.price-tag {
+ 			color: darken( $gray-lighter, 15% );
+ 			padding-right: .5rem;
+ 			padding-bottom: .5rem;
+ 		}
+ 	}
+ }
+
+ /**
+  *
+  * Category Sold
+  *
+  */
+ .category-sold {
+
+ 	.entry-header {
+ 		// border: 5px dotted yellow;
+		background-color: darken( #FF033E, 10% );
+ 		
+ 	}
+ 	.entry-footer {
+ 		color: darken( #FF033E, 10% );
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		font-size: 2rem;
+
+ 	}
+ }
+
+ /**
+  *
+  * Category Pending
+  *
+  */
+ .category-pending {
+
+ 	.entry-header {
+ 		// border: 5px dotted hotpink;
+		background-color: darken( #0070FF, 10% );
+ 		
+ 	}
+ 	.entry-footer {
+ 		color: darken( #0070FF, 10% );
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		font-size: 2rem;
+
+ 	}
+ }
+
+ /**
+  *
+  * Category Active
+  *
+  */
+ .category-active {
+
+ 	.entry-header {
+ 		// border: 5px dotted green;
+		background-color: darken( #47B200, 10% );
+ 		
+ 	}
+ 	.entry-footer {
+ 		color: darken( #47B200, 10% );
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		font-size: 2rem;
+
+ 	}
+ }
+
 
 /**
  *
@@ -799,6 +909,8 @@ img {
 
 	.widget {
 		border: 0px solid red;
+		padding-right: .5rem;
+		padding-left: .5rem;
 
 		color: lighten(grey, 30%);
 		background-color: darken( $steel, 10% );
@@ -830,6 +942,7 @@ img {
 		a {
 			// border: 1px solid black;
 			color: lighten(grey, 30%);
+			font-size: 2rem;
 
 			
 			&:hover {
