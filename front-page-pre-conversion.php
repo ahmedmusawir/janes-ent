@@ -98,15 +98,12 @@ $callout_content = get_field( 'callout_content' );
 
 	<header class="front-page-header">
 
-		<!-- Desktop Logo -->
-		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="<?php echo $logo_desktop; ?>" alt="Janes Enterprise">
+		<img class="hidden-xs wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janesnew/wp-content/uploads/2015/12/Original_Janes_logo_final_transparent_E_350.png" alt="Janes Enterprise">
+		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="http://janesnew/wp-content/uploads/2015/12/Original_Janes_logo_final_transparent_E_250.png" alt="Janes Enterprise">
 
-		<!-- Mobile Logo -->
-		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="<?php echo $logo_mobile; ?>" alt="Janes Enterprise">
-
-		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><?php echo $block1_title; ?></h1>
+		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">Janes Enterprises</h1>
 		<hr>
-		<h4 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s"><em><?php echo $block_1_subtitle; ?></em></h4>
+		<h4 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s"><em>Helping you to invest in your future ...</em></h4>
 
 		<button type="button" class="btn btn-success btn-xs google-tran " data-toggle="modal" data-target="#myModal">Translate Site</button>
 		<a href="#block3" title="" class="mPS2id-clicked" rel='m_PageScroll2id'><h4 class="animated infinite bounce"><i class="fa fa-chevron-circle-down"></i></h4></a>
@@ -133,19 +130,19 @@ $callout_content = get_field( 'callout_content' );
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img class="img-responsive" src="<?php echo $slider_image_1; ?>" alt="...">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider1.jpg" alt="...">
 			      <div class="carousel-caption">
 			        
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img class="img-responsive" src="<?php echo $slider_image_2; ?>" alt="...">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slider2.jpg" alt="...">
 			      <div class="carousel-caption">
 			        
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img class="img-responsive" src="<?php echo $slider_image_3; ?>" alt="...">
+			      <img class="img-responsive" src="wp-content/uploads/2015/12/slide3.jpg" alt="...">
 			      <div class="carousel-caption">
 			        
 			      </div>
@@ -175,19 +172,18 @@ $callout_content = get_field( 'callout_content' );
 		<article id="left" class="service-box col-md-4 col-lg-4 wow slideInLeft">
 
 			<div class="service-header">
-				<h2><i class="fa <?php echo $left_box_icon; ?> fa-3x"></i></h2>
-				<h2><?php echo $left_box_title ?></h2>
+				<h2><i class="fa fa-home fa-3x"></i></h2>
+				<h2>Property Rental & Purchase</h2>
 			</div>
 			<div class="service-text">
 				
 				<p>
-					<?php echo $left_box_content; ?>	
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
-
 			</div>
 
 			<p>
-				<a href="<?php echo $left_box_button_link ?>" class="btn btn-success" title=""><?php echo $left_box_button_text ?></a>
+				<a href="#" class="btn btn-success" title="">Learn More</a>
 			</p>
 		
 		</article>
@@ -195,18 +191,18 @@ $callout_content = get_field( 'callout_content' );
 		<article id="middle" class="service-box col-md-4 col-lg-4">
 
 			<div class="service-header">
-				<h2><i class="fa <?php echo $middle_box_icon; ?> fa-3x"></i></h2>
-				<h2><?php echo $middle_box_title; ?></h2>
+				<h2><i class="fa fa-gavel fa-3x"></i></h2>
+				<h2>Financial & Legal Services</h2>
 			</div>
 			<div class="service-text">
 				
 				<p>
-					<?php echo $middle_box_content; ?>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
 			</div>
 
 			<p>
-				<a href="<?php echo $middle_box_button_link; ?>" class="btn btn-success" title=""><?php echo $middle_box_button_text; ?></a>
+				<a href="#" class="btn btn-success" title="">Learn More</a>
 			</p>
 		
 		</article>
@@ -214,18 +210,18 @@ $callout_content = get_field( 'callout_content' );
 		<article id="right" class="service-box col-md-4 col-lg-4 wow slideInRight">
 
 			<div class="service-header">
-				<h2><i class="fa <?php echo $right_box_icon ?> fa-3x"></i></h2>
-				<h2><?php echo $right_box_title; ?></h2>
+				<h2><i class="fa fa-truck fa-3x"></i></h2>
+				<h2>Relocation or Transfer</h2>
 			</div>
 			<div class="service-text">
 				
 				<p>
-					<?php echo $right_box_content; ?>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias tenetur dignissimos provident unde quo dolorum quam, asperiores, maiores, facilis similique amet possimus vel odio harum. Ex, corrupti? Pariatur earum molestiae, corporis, fugiat cum corrupti laboriosam voluptatem quod mollitia adipisci sint nisi reiciendis itaque repudiandae sed laborum quos, nesciunt quasi?
 				</p>
 			</div>
 
 			<p>
-				<a href="<?php echo $right_box_button_link; ?>" class="btn btn-success" title=""><?php echo $right_box_button_text; ?></a>
+				<a href="#" class="btn btn-success" title="">Learn More</a>
 			</p>
 		
 		</article>
@@ -238,7 +234,7 @@ $callout_content = get_field( 'callout_content' );
 <style type="text/css" media="screen">
 
 	.front-page-block-4 {
-		background: url(<?php echo $featured_block_background_image; ?>) no-repeat center center fixed; 
+		background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -259,23 +255,25 @@ $callout_content = get_field( 'callout_content' );
 				<div class="featured-content wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="<?php echo $box_1_image; ?>" alt="">
+						<img src="wp-content/uploads/2015/12/featured-1.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
-						<h2><?php echo $box_1_title; ?></h2>
-						<h4><em><?php echo $box_1_sub_title; ?></em></i></h4>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
 
 					</div>
 					<div class="featured-text">
 						
-						<p>
-							<?php echo $box_1_content; ?>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
 						</p>
 					</div>
 
 					<p>
-						<a href="<?php echo $box_1_button_link; ?>" class="btn btn-danger" title=""><?php echo $box_1_button_text; ?></a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -287,22 +285,25 @@ $callout_content = get_field( 'callout_content' );
 				<div class="featured-content wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="<?php echo $box_2_image; ?>" alt="">
+						<img src="wp-content/uploads/2015/12/featured-2.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
-						<h2><?php echo $box_2_title; ?></h2>
-						<h4><em><?php echo $box_2_sub_title; ?></em></i></h4>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
 
 					</div>
 					<div class="featured-text">
-						<p>
-							<?php echo $box_2_content; ?>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
 						</p>
 					</div>
 
 					<p>
-						<a href="<?php echo $box_2_button_link; ?>" class="btn btn-danger" title=""><?php echo $box_2_button_text; ?></a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -319,24 +320,25 @@ $callout_content = get_field( 'callout_content' );
 				<div class="featured-content  wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="<?php echo $box_3_image; ?>" alt="">
+						<img src="wp-content/uploads/2015/12/featured-3.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
-						<h2><?php echo $box_3_title; ?></h2>
-						<h4><em><?php echo $box_3_sub_title; ?></em></i></h4>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
 
 					</div>
 					<div class="featured-text">
 						
-						<p>
-							<?php echo $box_3_content; ?>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
 						</p>
-
 					</div>
 
 					<p>
-						<a href="<?php echo $box_3_button_link; ?>" class="btn btn-danger" title=""><?php echo $box_3_button_text; ?></a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -348,23 +350,25 @@ $callout_content = get_field( 'callout_content' );
 				<div class="featured-content  wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 
 					<div class="fearured-img">
-						<img src="<?php echo $box_4_image; ?>" alt="">
+						<img src="wp-content/uploads/2015/12/featured-4.jpg" alt="">
 					</div>
 					
 					<div class="featured-header">
-						<h2><?php echo $box_3_title; ?></h2>
-						<h4><em><?php echo $box_3_sub_title; ?></em></i></h4>
+						<h2>Lake Views</h2>
+						<h4><em>5 Bedrooms / 600sqm / $70000</em></i></h4>
 
 					</div>
 					<div class="featured-text">
 						
-						<p>
-							<?php echo $box_3_content; ?>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. 
 						</p>
 					</div>
 
 					<p>
-						<a href="<?php echo $box_3_button_link; ?>" class="btn btn-danger" title=""><?php echo $box_3_button_text; ?></a>
+						<a href="#" class="btn btn-danger" title="">Learn More</a>
 					</p>
 
 				</div>
@@ -381,7 +385,11 @@ $callout_content = get_field( 'callout_content' );
 	
 	<article class="callout-box">
 	
-		<?php echo $callout_content; ?>
+		<h2 id="interest">Interested?</h2>
+		<h2>Call Us at 1.404.218.1998</h2>
+		<h2>Visit Our Office at</h2>
+		<h3>2657 Ashleigh Lane, STE 300, Alpharetta, GA 30004</h3>
+
 	</article>
 
 </section>

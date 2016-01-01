@@ -179,17 +179,7 @@ img {
 .front-page-block-2 {
 	// background-color: rgba( darken( $brand-primary, 10% ), .9);
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#be8706+0,be8706+100&0.27+0,1+100 */
-//background: -moz-linear-gradient(top,  rgba(190,135,6,0.27) 0%, rgba(190,135,6,1) 100%); /* FF3.6-15 */
-// background: -webkit-linear-gradient(top,  rgba(190,135,6,0.27) 0%,rgba(190,135,6,1) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: linear-gradient(to bottom,  rgba(190,135,6,0.27) 0%,rgba(190,135,6,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45be8706', endColorstr='#be8706',GradientType=0 ); /* IE6-9 */
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#be8706+50,be8706+100&0.27+0,1+100 */
-// background: -moz-linear-gradient(top,  rgba(190,135,6,0.50) 20%, rgba(190,135,6,0.84) 50%, rgba(190,135,6,1) 100%); /* FF3.6-15 */
-// background: -webkit-linear-gradient(top,  rgba(190,135,6,0.50) 20%,rgba(190,135,6,0.84) 50%,rgba(190,135,6,1) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: linear-gradient(to bottom,  rgba(190,135,6,0.50) 20%,rgba(190,135,6,0.84) 50%,rgba(190,135,6,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45be8706', endColorstr='$brand-primary',GradientType=0 ); /* IE6-9 */
 @include background(linear-gradient( rgba( $silver, .8 ), $brand-primary ) left repeat);
 
 
@@ -267,6 +257,7 @@ img {
 		#fp-carousel {
 			// border: 2px solid red;
 			padding-top: 2rem;
+			padding-bottom: 1.5rem;
 		}
 	}
 
@@ -460,6 +451,21 @@ img {
 	// border: 1px solid blue;
 	padding: 0;
 	margin-top: 1.1rem;
+
+	.nav-links {
+		// border: 1px solid blue;
+		margin-left: .5rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		background-color: rgba( darken( $steel, 10% ), .85);
+
+		a {
+			color: lighten( $brand-primary, 10% );
+		}
+
+
+	}
 }
 
 
@@ -496,6 +502,8 @@ img {
  */
 .blog-post {
 	// background-color: rgba( darken( $silver, 0% ), .9);
+			// border: 1px solid blue;
+
 	background-color: rgba( lighten( $gray-light, 50% ), .8);
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -555,7 +563,6 @@ img {
 	}
 
 	.entry-content {
-		
 
 	}
 
@@ -565,7 +572,6 @@ img {
 	}
 
 	.entry-footer {
-		// border: 1px solid blue;
 		padding-bottom: 2rem;
 		padding-top: 2rem;
 	}
