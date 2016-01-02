@@ -11052,6 +11052,21 @@ button.close {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+}
+
 .navbar {
   background-color: rgba(89, 89, 89, 0.8);
   box-shadow: 5px 5px 8px #555555;
@@ -11378,15 +11393,32 @@ img {
 }
 
 .site-main .nav-links {
-  margin-left: .5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.4rem;
   background-color: rgba(77, 77, 77, 0.85);
 }
 
 .site-main .nav-links a {
   color: #f9bd31;
+}
+
+.site-main .navigation .nav-links {
+  padding-bottom: 1.5rem;
+}
+
+.site-main .navigation .nav-links::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.site-main .navigation .nav-links .nav-previous {
+  float: left;
+}
+
+.site-main .navigation .nav-links .nav-next {
+  float: right;
 }
 
 /**
@@ -11420,7 +11452,7 @@ img {
   padding: 1rem;
   margin-bottom: 1rem;
   margin-right: 0rem;
-  margin-left: .5rem;
+  margin-left: .15rem;
 }
 
 .blog-post .entry-header {
@@ -11596,6 +11628,15 @@ img {
   padding-left: 0;
 }
 
+.single-page .entry-header h2 {
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  font-size: 4rem;
+  color: #be8706;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
 .single-page .entry-content {
   padding: 3rem;
   padding-top: 5rem;
@@ -11689,6 +11730,33 @@ img {
   .sidebar {
     padding-left: 0;
   }
+}
+
+/**
+ *
+ * Land & Property Single Page Style
+ *	content-land-page.php
+ *	content-property-page
+ */
+.single-details {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-color: rgba(102, 102, 102, 0.8);
+  font-size: 2rem;
+}
+
+.single-description {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(238, 238, 238, 0.8);
+  font-size: 2rem;
+}
+
+.single-map {
+  padding-bottom: 3rem;
+  background-color: rgba(85, 85, 85, 0.6);
+  padding-top: 3rem;
+  font-size: 2rem;
 }
 
 /**
@@ -11800,6 +11868,18 @@ img {
 
 .footer-main .widget a:hover {
   color: white;
+}
+
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important;
 }
 
 /*# sourceMappingURL=style.css.map */

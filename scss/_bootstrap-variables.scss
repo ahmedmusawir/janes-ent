@@ -313,10 +313,11 @@ $border-radius-small:       3px;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
+// $screen-sm:                  900px;
 // $screen-sm:                  768px
-// $screen-sm-min:              $screen-sm
+// $screen-sm-min:              $screen-sm;
 //** Deprecated `$screen-tablet` as of v3.0.1
-// $screen-tablet:              $screen-sm-min
+// $screen-tablet:              $screen-sm-min;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1

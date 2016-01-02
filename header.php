@@ -22,6 +22,17 @@
 <?php wp_head(); ?>
 </head>
 
+<?php 
+/**
+ *
+ * ACF Background Img Variable
+ *
+ */
+
+$site_background_image = get_field( 'site_background_image', 2 );
+
+?>
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'janes-ent' ); ?></a>
@@ -125,7 +136,7 @@
 		#content {
 			font-family: 'Raleway', sans-serif;
 			margin-top: 50px;
-			background: url(http://janesnew/wp-content/uploads/2015/12/best-listing-photos-travis-mark-urban.jpg) no-repeat center center fixed; 
+			background: url(<?php echo $site_background_image; ?>) no-repeat center center fixed; 
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;

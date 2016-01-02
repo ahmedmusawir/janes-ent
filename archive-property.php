@@ -55,13 +55,20 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			// the_posts_navigation();
 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+
+		<div class="nav-links clearfix">
+			<div class="navigation">
+			<div class="alignleft"><?php previous_posts_link( '&laquo; Previous Entries' ); ?></div>
+			<div class="alignright"><?php next_posts_link( 'Next Entries &raquo;', '' ); ?></div>
+			</div>
+		</div>
 
 		</main><!-- #main -->
 

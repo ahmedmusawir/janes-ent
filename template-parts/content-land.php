@@ -11,6 +11,7 @@
 
 <?php 
 $land_price = get_field( 'land_price' );
+$land_map = get_field( 'land_map' );
 
 ?>
 
