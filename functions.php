@@ -88,7 +88,7 @@ add_action( 'after_setup_theme', 'janes_ent_setup' );
  * @global int $content_width
  */
 function janes_ent_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'janes_ent_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'janes_ent_content_width', 1140 );
 }
 add_action( 'after_setup_theme', 'janes_ent_content_width', 0 );
 
@@ -201,6 +201,16 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+// Remove Comments from Jetpack Carousel 
+function tweakjp_rm_comments_att( $open, $post_id ) {
+    $post = get_post( $post_id );
+    if( $post->post_type == 'attachment' ) {
+        return false;
+    }
+    return $open;
+}
+add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
 
 
 

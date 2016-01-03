@@ -105,10 +105,10 @@ $callout_content = get_field( 'callout_content' );
 		<img class="hidden-sm hidden-md hidden-lg wow slideInDown"  data-wow-duration="2s" data-wow-delay="0.5s" src="<?php echo $logo_mobile; ?>" alt="Janes Enterprise">
 
 		<h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><?php echo $block1_title; ?></h1>
-		<hr>
+		<!-- <hr> -->
 		<h4 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s"><em><?php echo $block_1_subtitle; ?></em></h4>
 
-		<button type="button" class="btn btn-success btn-xs google-tran " data-toggle="modal" data-target="#myModal">Translate Site</button>
+		<!-- <button type="button" class="btn btn-success btn-xs google-tran " data-toggle="modal" data-target="#myModal">Translate Site</button> -->
 		<a href="#block3" title="" class="mPS2id-clicked" rel='m_PageScroll2id'><h4 class="animated infinite bounce"><i class="fa fa-chevron-circle-down"></i></h4></a>
 		
 	</header>

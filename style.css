@@ -11741,20 +11741,41 @@ img {
 .single-details {
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: rgba(102, 102, 102, 0.8);
+  background-color: rgba(179, 179, 179, 0.8);
   font-size: 2rem;
+  color: #5e5e5e;
+}
+
+.single-details h2 {
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  padding-bottom: 2rem;
 }
 
 .single-description {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: rgba(238, 238, 238, 0.8);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #626262;
+}
+
+.single-description h2 {
+  font-family: 'Bevan', cursive;
+  font-variant: small-caps;
+  padding-bottom: 2rem;
+  color: #6f6f6f;
+}
+
+.single-description p {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .single-map {
+  border: 3px solid #404040;
   padding-bottom: 3rem;
-  background-color: rgba(85, 85, 85, 0.6);
+  background-color: rgba(59, 59, 59, 0.4);
   padding-top: 3rem;
   font-size: 2rem;
 }

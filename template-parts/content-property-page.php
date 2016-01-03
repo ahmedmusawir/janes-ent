@@ -112,21 +112,40 @@ $google_map = get_field( 'google_map' );
 		         </tr>
 		         <tr>
 		            <td>PROPERTY TYPE</td>
-		            <td>Land</td>
+		            <td>Residential</td>
 		         </tr>
 		         <tr>
-		            <td>LOT SIZE</td>
-		            <td>.24</td>
+		            <td>UNIT #</td>
+		            <td>204</td>
+		         </tr>
+		         <tr>
+		            <td>BEDROOMS</td>
+		            <td>8</td>
+		         </tr>
+		         <tr>
+		            <td>BEDROOMS</td>
+		            <td>4</td>
+		         </tr>
+		         <tr>
+		            <td>YEAR BUILT</td>
+		            <td>1998</td>
+		         </tr>
+		         <tr>
+		            <td>SQUARE FOOTAGE</td>
+		            <td>752</td>
 		         </tr>
 		         <tr>
 		            <td>TAXES</td>
-		            <td>$108</td>
+		            <td>$728</td>
 		         </tr>
 		         <tr>
 		            <td>PARCEL NUMBER</td>
 		            <td>11-10-23-9303-0050-0030</td>
 		         </tr>
-		        
+		        <tr>
+		            <td>HOA</td>
+		            <td>$174</td>
+		         </tr>
 		      </tbody>
 		   </table>
 		</div>
@@ -158,7 +177,7 @@ $google_map = get_field( 'google_map' );
 </section>
 <section class="single-map">
 	<article class="container">
-		<?php $location = get_field('google_map'); if($location['address']) { ?>
+		<?php $location = get_field('property_map'); if($location['address']) { ?>
 		<div class="acf-map">
 		<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"  itemprop="map"></div>
 		</div>

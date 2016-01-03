@@ -868,20 +868,43 @@ img {
 	// border: 3px solid dodgerblue;
 	padding-bottom: 3rem;
 	padding-top: 3rem;
-	background-color: rgba( $steel, .8 );
+	background-color: rgba( lighten( $steel, 30% ), .8 );
 	font-size: 2rem;
+	color: darken( $gray-light, 10% );
+	h2 {
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		padding-bottom: 2rem;
+		
+	}
+
 }
 .single-description {
 	// border: 3px solid yellow;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+
 	background-color: rgba( $smoke, .8 );
-	font-size: 2rem;
+	font-size: 1.8rem;
+	color: lighten( $gray, 5% );
+
+	h2 {
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		padding-bottom: 2rem;
+		color: lighten( $gray, 10% );
+
+	}
+
+	p {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
 .single-map {
-	// border: 3px solid red;
+	border: 3px solid lighten( black, 25% );
 	padding-bottom: 3rem;
-	background-color: rgba( $charcoal, .6 );
+	background-color: rgba( darken( $charcoal, 10% ), .4 );
 	padding-top: 3rem;
 	font-size: 2rem;
 }
