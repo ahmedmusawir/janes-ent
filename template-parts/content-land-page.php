@@ -157,14 +157,28 @@ $google_map = get_field( 'google_map' );
 	</article>
 </section>
 <section class="single-map">
-	<article class="container">
+	<!-- <article class="container">
 		<?php $location = get_field('google_map'); if($location['address']) { ?>
 		<div class="acf-map">
 		<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"  itemprop="map"></div>
 		</div>
 		<?php } ?>
 		
-	</article>
+	</article> -->
+
+	<article class="container">
+
+		<?php $location = get_field('google_map'); ?>
+		<?php if ($location) : ?>
+			<?php	if($location['address']) : ?>
+				<div class="acf-map">
+				<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"  itemprop="map"></div>
+				</div>
+
+			<?php endif;?>
+		<?php endif; ?>
+		
+	</article>	
 </section>
 
 

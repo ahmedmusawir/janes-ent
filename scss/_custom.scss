@@ -544,6 +544,8 @@ img {
 		margin-left: 1.3rem;
 		margin-right: 1.3rem;
 
+
+
 		h1, h2 {
 			font-size: 3.5rem;
 			font-variant: small-caps;
@@ -584,6 +586,11 @@ img {
 			@include transform-origin(center top);
 			@include transform-style(preserve-3d);
 			opacity: .5;
+		}
+
+		.for-spanish {
+			// border: 1px solid yellow;
+			margin-top: 3.5rem;
 		}
 
 	}

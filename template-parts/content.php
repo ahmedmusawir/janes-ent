@@ -32,6 +32,8 @@
 		
 		<div class="featured-img col-md-5 col-lg-5">
 			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
+			<a class="btn btn-success for-spanish" href="http://google.com">For Spanish</a>
+
 		</div>
 		<div class="post-text  col-md-7 col-lg-7">
 
@@ -43,6 +45,7 @@
 					) );
 					
 				?>
+
 				<?php	
 
 					wp_link_pages( array(
@@ -81,13 +84,16 @@
 						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					) );
-					
+
+
 
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'janes-ent' ),
 						'after'  => '</div>',
 					) );
 				?>
+				<a class="btn btn-success for-spanish" href="http://google.com">For Spanish</a>
+
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer only-text">
