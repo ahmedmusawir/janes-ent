@@ -11395,6 +11395,12 @@ img {
   color: #f9bd31;
 }
 
+.site-main .none-found {
+  color: #facd63;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
 .site-main .nav-links {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -11815,6 +11821,28 @@ img {
   font-weight: 500;
   font-variant: small-caps;
   color: #dddddd;
+}
+
+.widget h3 {
+  color: #efaa08;
+  text-align: center;
+}
+
+.widget h4 {
+  color: #facd63;
+  text-align: center;
+}
+
+.widget img {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.widget p {
+  color: #cccccc;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
 }
 
 .widget ul {

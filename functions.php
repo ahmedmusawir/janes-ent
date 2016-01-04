@@ -192,6 +192,8 @@ require get_template_directory() . '/inc/jetpack.php';
 // Register Custom Navigation Walker
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
+// Register Custom Widget
+require get_template_directory() . '/inc/my-custom-widget.php';
 
 
 // Replaces the excerpt "more" text by a link
