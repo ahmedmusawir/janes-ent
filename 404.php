@@ -8,9 +8,20 @@
  */
 
 get_header(); ?>
+<section class="content-wrapper">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="page-header-container">
+		
+		<header class="page-header container">
+		
+			<h1> <?php wp_title(); ?></h1>
+
+		</header>
+
+	</div>
+
+	<div id="primary" class="content-area container">
+			<main id="main" class="site-main col-sm-12 col-md-12 col-lg-12" role="main">	
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -58,7 +69,10 @@ get_header(); ?>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+		
 	</div><!-- #primary -->
+
+</section> <!-- End content-wrapper -->
 
 <?php
 get_footer();

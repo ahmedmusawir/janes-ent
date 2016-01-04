@@ -26,11 +26,16 @@
 
 
 <?php 
+
 $land_price = get_field( 'land_price' );
-$land_map = get_field( 'land_map' );
-		// echo $land_map;
-$google_map = get_field( 'google_map' );
-// echo $google_map;
+$land_address = get_field( 'land_address' );
+$land_property_type = get_field( 'land_property_type' );
+$land_lot_size = get_field( 'land_lot_size' );
+$land_taxes = get_field( 'land_taxes' );
+$land_parcel_number = get_field( 'land_parcel_number' );
+$land_description = get_field( 'land_description' );
+$location = get_field( 'land_google_map' );
+$land_spanish_page_link = get_field( 'land_spanish_page_link' );
 
 ?>
 
@@ -104,27 +109,27 @@ $google_map = get_field( 'google_map' );
 		      <tbody>
 		         <tr>
 		            <td>PRICE</td>
-		            <td>$4,995</td>
+		            <td><?php echo $land_price; ?></td>
 		         </tr>
 		         <tr>
 		            <td>PROPERTY ADDRESS</td>
-		            <td>807 Badem Powel Rd, , Hawthorne, 32640</td>
+		            <td><?php echo $land_address; ?></td>
 		         </tr>
 		         <tr>
 		            <td>PROPERTY TYPE</td>
-		            <td>Land</td>
+		            <td><?php echo $land_property_type; ?></td>
 		         </tr>
 		         <tr>
 		            <td>LOT SIZE</td>
-		            <td>.24</td>
+		            <td><?php echo $land_lot_size; ?></td>
 		         </tr>
 		         <tr>
 		            <td>TAXES</td>
-		            <td>$108</td>
+		            <td><?php echo $land_taxes; ?></td>
 		         </tr>
 		         <tr>
 		            <td>PARCEL NUMBER</td>
-		            <td>11-10-23-9303-0050-0030</td>
+		            <td><?php echo $land_parcel_number; ?></td>
 		         </tr>
 		        
 		      </tbody>
@@ -138,37 +143,16 @@ $google_map = get_field( 'google_map' );
 	<article class="container">
 
 		<h2 class="text-center">Description</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>	
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>	
+		
+		<?php echo $land_description; ?>
+
 	</article>
 </section>
+
 <section class="single-map">
-	<!-- <article class="container">
-		<?php $location = get_field('google_map'); if($location['address']) { ?>
-		<div class="acf-map">
-		<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"  itemprop="map"></div>
-		</div>
-		<?php } ?>
-		
-	</article> -->
 
 	<article class="container">
 
-		<?php $location = get_field('google_map'); ?>
 		<?php if ($location) : ?>
 			<?php	if($location['address']) : ?>
 				<div class="acf-map">

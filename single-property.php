@@ -16,7 +16,7 @@ get_header(); ?>
 		<header class="page-header container">
 		
 			<h1> <?php wp_title(); ?></h1>
-			<h2>Property Single</h2>
+			<!-- <h2>Property Single</h2> -->
 
 		</header>
 

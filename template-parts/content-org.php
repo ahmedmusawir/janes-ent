@@ -9,12 +9,6 @@
 
 ?>
 
-<?php 
-
-$link_to_spanish_page = get_field( 'link_to_spanish_page' );
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post row'); ?>>
 	
 
@@ -36,12 +30,12 @@ $link_to_spanish_page = get_field( 'link_to_spanish_page' );
 			endif; ?>
 		</header><!-- .entry-header -->
 		
-		<div class="featured-img col-md-5 col-lg-5 col-md-push-7 col-lg-push-7">
+		<div class="featured-img col-md-5 col-lg-5">
 			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
-			<a class="btn btn-success btn-block for-spanish" href="<?php echo $link_to_spanish_page; ?>">Español</a>
+			<a class="btn btn-success for-spanish" href="http://google.com">For Spanish</a>
 
 		</div>
-		<div class="post-text  col-md-7 col-lg-7 col-md-pull-5 col-lg-pull-5">
+		<div class="post-text  col-md-7 col-lg-7">
 
 			<div class="entry-content">
 				<?php
@@ -98,7 +92,7 @@ $link_to_spanish_page = get_field( 'link_to_spanish_page' );
 						'after'  => '</div>',
 					) );
 				?>
-				<a class="btn btn-success for-spanish" href="<?php echo $link_to_spanish_page; ?>">Español</a>
+				<a class="btn btn-success for-spanish" href="http://google.com">For Spanish</a>
 
 			</div><!-- .entry-content -->
 

@@ -23,16 +23,26 @@
 }*/
 </style>
 
-
-
 <?php 
-$land_price = get_field( 'land_price' );
-$land_map = get_field( 'land_map' );
-		// echo $land_map;
-$google_map = get_field( 'google_map' );
-// echo $google_map;
+
+$property_price = get_field( 'property_price' );
+$property_address = get_field( 'property_address' );
+$property_property_type = get_field( 'property_property_type' );
+$property_unit_number = get_field( 'property_unit_number' );
+$property_bathrooms = get_field( 'property_bathrooms' );
+$property_bedrooms = get_field( 'property_bedrooms' );
+$property_year_built = get_field( 'property_year_built' );
+$property_square_footage = get_field( 'property_square_footage' );
+$property_taxes = get_field( 'property_taxes' );
+$property_parcel_number = get_field( 'property_parcel_number' );
+$property_hoa = get_field( 'property_hoa' );
+$property_description = get_field( 'property_description' );
+$location = get_field( 'property_map' );
+$property_spanish_page_link = get_field( 'property_spanish_page_link' );
 
 ?>
+
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
 	<header class="entry-header">
@@ -104,47 +114,47 @@ $google_map = get_field( 'google_map' );
 		      <tbody>
 		         <tr>
 		            <td>PRICE</td>
-		            <td>$4,995</td>
+		            <td><?php echo $property_price;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>PROPERTY ADDRESS</td>
-		            <td>807 Badem Powel Rd, , Hawthorne, 32640</td>
+		            <td><?php echo $property_address; ?></td>
 		         </tr>
 		         <tr>
 		            <td>PROPERTY TYPE</td>
-		            <td>Residential</td>
+		            <td><?php echo $property_property_type;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>UNIT #</td>
-		            <td>204</td>
+		            <td><?php echo $property_unit_number;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>BEDROOMS</td>
-		            <td>8</td>
+		            <td><?php echo $property_bedrooms;  ?></td>
 		         </tr>
 		         <tr>
-		            <td>BEDROOMS</td>
-		            <td>4</td>
+		            <td>BATHROOMS</td>
+		            <td><?php echo $property_bathrooms;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>YEAR BUILT</td>
-		            <td>1998</td>
+		            <td><?php echo $property_year_built;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>SQUARE FOOTAGE</td>
-		            <td>752</td>
+		            <td><?php echo $property_square_footage;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>TAXES</td>
-		            <td>$728</td>
+		            <td><?php echo $property_taxes;  ?></td>
 		         </tr>
 		         <tr>
 		            <td>PARCEL NUMBER</td>
-		            <td>11-10-23-9303-0050-0030</td>
+		            <td><?php echo $property_parcel_number;  ?></td>
 		         </tr>
-		        <tr>
+		         <tr>
 		            <td>HOA</td>
-		            <td>$174</td>
+		            <td><?php echo $property_hoa; ?></td>
 		         </tr>
 		      </tbody>
 		   </table>
@@ -157,28 +167,14 @@ $google_map = get_field( 'google_map' );
 	<article class="container">
 
 		<h2 class="text-center">Description</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>	
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>	
+		
+		<?php echo $property_description; ?>
+
 	</article>
 </section>
 <section class="single-map">
 	<article class="container">
 
-		<?php $location = get_field('property_map'); ?>
 		<?php if ($location) : ?>
 			<?php	if($location['address']) : ?>
 				<div class="acf-map">

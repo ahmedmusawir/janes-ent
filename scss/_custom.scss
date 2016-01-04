@@ -141,13 +141,17 @@ img {
  */
 .front-page-block-1 {
 	background-color: rgba( $steel, .85);
-	min-height: 70.5rem;
 	height: 95rem;
 
 	.front-page-header {
 		text-align: center;
 		padding-bottom: 10rem;
-		padding-top: 6rem;
+		padding-top: 1rem;
+		// padding-top: 6rem;
+
+		img {
+			// border: 3px solid red;
+		}
 		h1 {
 			font-family: 'Bevan', cursive;
 			font-size: 9rem;
@@ -216,7 +220,7 @@ img {
 			// padding-top: 1rem;
 			// min-height: 150px;
 			font-size: 1.7rem;
-			font-weight: 300;
+			font-weight: 400;
 
 		}
 
@@ -462,6 +466,11 @@ img {
 	padding: 0;
 	margin-top: 1.1rem;
 
+	.error-404 {
+		color: lighten( $brand-primary, 10% );
+		// border: 3px solid yellow;
+	}
+
 
 	.nav-links {
 		// border: 1px solid blue;
@@ -578,25 +587,30 @@ img {
 
 	.featured-img {
 		padding-bottom: 2rem;
-		@include transition(all 1.0s ease-in-out);
+		
+		img {
+			@include transition(all 1.0s ease-in-out);
 
-		&:hover {
-			@include transform(translateY(0px));
-			@include transform(scale(0.9) rotate(0deg));
-			@include transform-origin(center top);
-			@include transform-style(preserve-3d);
-			opacity: .5;
+			&:hover {
+				@include transform(translateY(0px));
+				@include transform(scale(0.9) rotate(0deg));
+				@include transform-origin(center top);
+				@include transform-style(preserve-3d);
+				opacity: .5;
+			}
 		}
 
 		.for-spanish {
-			// border: 1px solid yellow;
 			margin-top: 3.5rem;
 		}
 
 	}
 
 	.entry-content {
-
+		// border: 1px solid yellow;
+		th {
+			min-width: 120px;
+		}
 	}
 
 	.only-text {

@@ -9,29 +9,46 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'janes-ent' ); ?></h1>
-	</header><!-- .page-header -->
+<section class="no-results not-found content-wrapper">
+	
+	<div class="page-header-container">
+		
+		<header class="page-header container">
+		
+			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'janes-ent' ); ?></h1>
 
-	<div class="page-content">
-		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+		</header>
 
-			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'janes-ent' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+	</div>
 
-		<?php elseif ( is_search() ) : ?>
-
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'janes-ent' ); ?></p>
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main col-sm-7 col-md-8 col-lg-8" role="main">
+			
 			<?php
-				get_search_form();
+				if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-		else : ?>
+					<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'janes-ent' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'janes-ent' ); ?></p>
-			<?php
-				get_search_form();
+				<?php elseif ( is_search() ) : ?>
 
-		endif; ?>
-	</div><!-- .page-content -->
+					<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'janes-ent' ); ?></p>
+					<?php
+						get_search_form();
+
+				else : ?>
+
+					<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'janes-ent' ); ?></p>
+					<?php
+						get_search_form();
+
+				endif; 
+			?>			
+					
+
+			</main><!-- #main -->
+
+		<aside class="sidebar col-sm-5 col-md-4 col-lg-4"><?php get_sidebar(); ?></aside>
+		
+	</div><!-- #primary -->	
+
 </section><!-- .no-results -->

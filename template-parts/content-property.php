@@ -10,7 +10,20 @@
 ?>
 
 <?php 
+
 $property_price = get_field( 'property_price' );
+$property_address = get_field( 'property_address' );
+$property_property_type = get_field( 'property_property_type' );
+$property_unit_number = get_field( 'property_unit_number' );
+$property_bathrooms = get_field( 'property_bathrooms' );
+$property_bedrooms = get_field( 'property_bedrooms' );
+$property_year_built = get_field( 'property_year_built' );
+$property_square_footage = get_field( 'property_square_footage' );
+$property_taxes = get_field( 'property_taxes' );
+$property_parcel_number = get_field( 'property_parcel_number' );
+$property_description = get_field( 'property_description' );
+$location = get_field( 'property_google_map' );
+$property_spanish_page_link = get_field( 'property_spanish_page_link' );
 
 ?>
 
@@ -42,6 +55,7 @@ $property_price = get_field( 'property_price' );
 		
 		<div class="featured-img col-md-5 col-lg-5">
 			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
+
 		</div>
 		<div class="post-text  col-md-7 col-lg-7">
 
@@ -55,32 +69,32 @@ $property_price = get_field( 'property_price' );
 					</thead>
 					<tbody>
 						<tr>
-							<th>Address:</th><td>123 Street, GA 30004</td>
+							<th>Address:</th><td><?php echo $property_address; ?></td>
 						</tr>
 						<tr>
-							<th>Property Type:</th><td>Residential</td>
+							<th>Property Type:</th><td><?php echo $property_property_type; ?></td>
 						</tr>
 						<tr>
-							<th>Sq Footage:</th><td>203</td>
+							<th>Sq Footage:</th><td><?php echo $property_square_footage; ?></td>
 						</tr>
 						<tr>
-							<th>Year Built:</th><td>1874</td>
+							<th>Year Built:</th><td><?php echo $property_year_built; ?></td>
 						</tr>
 						<tr>
-							<th>Bedroom:</th><td>5</td>
+							<th>Bedroom:</th><td><?php echo $property_bedrooms; ?></td>
 						</tr>
 						<tr>
-							<th>Bathroom:</th><td>3</td>
+							<th>Bathroom:</th><td><?php echo $property_bathrooms; ?></td>
 						</tr>
 					</tbody>
 				</table>
 				<article class="row">
 
 					<div class="readmore col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<a class="btn btn-success" href="<?php the_permalink(); ?>" title="">Read More</a>
+						<a class="btn btn-success btn-block" href="<?php the_permalink(); ?>" title="">Read More</a>
 					</div>
 					<div class="spanish col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<a class="btn btn-success" href="http://google.com" title="">For Spanish</a>
+						<a class="btn btn-success btn-block" href="<?php echo $property_spanish_page_link; ?>" title="">For Spanish</a>
 					</div>
 				
 				</article>
@@ -113,6 +127,9 @@ $property_price = get_field( 'property_price' );
 						the_title( '<h1 class="entry-title">', '</h1>' );
 					} else {
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						
+						echo "<h4 class='text-right price-tag'>Price: $property_price</h4>";
+
 					}
 
 				if ( 'post' === get_post_type() ) : ?>
@@ -124,18 +141,45 @@ $property_price = get_field( 'property_price' );
 			</header><!-- .entry-header -->
 
 			<div class="entry-content only-text">
-				<?php
-					the_excerpt( sprintf(
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
-					
+				
+				
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Address:</th><td><?php echo $property_address; ?></td>
+						</tr>
+						<tr>
+							<th>Property Type:</th><td><?php echo $property_property_type; ?></td>
+						</tr>
+						<tr>
+							<th>Sq Footage:</th><td><?php echo $property_square_footage; ?></td>
+						</tr>
+						<tr>
+							<th>Year Built:</th><td><?php echo $property_year_built; ?></td>
+						</tr>
+						<tr>
+							<th>Bedroom:</th><td><?php echo $property_bedrooms; ?></td>
+						</tr>
+						<tr>
+							<th>Bathroom:</th><td><?php echo $property_bathrooms; ?></td>
+						</tr>
+					</tbody>
+				</table>
+				<article class="row">
 
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'janes-ent' ),
-						'after'  => '</div>',
-					) );
-				?>
+					<div class="readmore col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a class="btn btn-success btn-block" href="<?php the_permalink(); ?>" title="">Read More</a>
+					</div>
+					<div class="spanish col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a class="btn btn-success btn-block" href="<?php echo $property_spanish_page_link; ?>" title="">For Spanish</a>
+					</div>
+				
+				</article>				
 
 			</div><!-- .entry-content -->
 

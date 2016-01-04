@@ -10,8 +10,15 @@
 ?>
 
 <?php 
+
 $land_price = get_field( 'land_price' );
-$land_map = get_field( 'land_map' );
+$land_address = get_field( 'land_address' );
+$land_property_type = get_field( 'land_property_type' );
+$land_lot_size = get_field( 'land_lot_size' );
+$land_taxes = get_field( 'land_taxes' );
+$land_parcel_number = get_field( 'land_parcel_number' );
+$land_google_map = get_field( 'land_google_map' );
+$land_spanish_page_link = get_field( 'land_spanish_page_link' );
 
 ?>
 
@@ -57,23 +64,23 @@ $land_map = get_field( 'land_map' );
 					</thead>
 					<tbody>
 						<tr>
-							<th>Address:</th><td>123 Street, GA 30004</td>
+							<th>Address:</th><td><?php echo $land_address; ?></td>
 						</tr>
 						<tr>
-							<th>Property Type:</th><td>Land</td>
+							<th>Property Type:</th><td><?php echo $land_property_type; ?></td>
 						</tr>
 						<tr>
-							<th>Lot Size:</th><td>0.24</td>
+							<th>Lot Size:</th><td><?php echo $land_lot_size; ?></td>
 						</tr>
 					</tbody>
 				</table>
 				<article class="row">
 
 					<div class="readmore col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<a class="btn btn-success" href="<?php the_permalink(); ?>" title="">Read More</a>
+						<a class="btn btn-success btn-block" href="<?php the_permalink(); ?>" title="">Read More</a>
 					</div>
 					<div class="spanish col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<a class="btn btn-success" href="http://google.com" title="">For Spanish</a>
+						<a class="btn btn-success btn-block" href="<?php echo $land_spanish_page_link ?>" title="">Español</a>
 					</div>
 				
 				</article>
@@ -105,6 +112,8 @@ $land_map = get_field( 'land_map' );
 						the_title( '<h1 class="entry-title">', '</h1>' );
 					} else {
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						echo "<h4 class='text-right price-tag'>Price: $land_price</h4>";
+
 					}
 
 				if ( 'post' === get_post_type() ) : ?>
@@ -116,18 +125,35 @@ $land_map = get_field( 'land_map' );
 			</header><!-- .entry-header -->
 
 			<div class="entry-content only-text">
-				<?php
-					the_excerpt( sprintf(
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
-					
+			
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Address:</th><td><?php echo $land_address; ?></td>
+						</tr>
+						<tr>
+							<th>Property Type:</th><td><?php echo $land_property_type; ?></td>
+						</tr>
+						<tr>
+							<th>Lot Size:</th><td><?php echo $land_lot_size; ?></td>
+						</tr>
+					</tbody>
+				</table>
+				<article class="row">
 
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'janes-ent' ),
-						'after'  => '</div>',
-					) );
-				?>
+					<div class="readmore col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a class="btn btn-success btn-block" href="<?php the_permalink(); ?>" title="">Read More</a>
+					</div>
+					<div class="spanish col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a class="btn btn-success btn-block" href="<?php echo $land_spanish_page_link ?>" title="">Español</a>
+					</div>
+				
+				</article>			
 
 			</div><!-- .entry-content -->
 
