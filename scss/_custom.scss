@@ -531,6 +531,11 @@ img {
 			font-variant: small-caps;
 			font-size: 6rem;
 			color: darken( $gray-lighter, 10% );
+
+			@media ( max-width: 768px ) {
+				// color: red;
+				font-size: 4rem;
+			}
 		}
 	}
 

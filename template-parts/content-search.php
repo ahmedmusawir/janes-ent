@@ -31,16 +31,16 @@
 		</header><!-- .entry-header -->
 		
 		<div class="featured-img col-md-5 col-lg-5">
-			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
+			<a href="<?php the_permalink(); ?>" title=""><?php //the_post_thumbnail( 'full', array('class' => 'img-thumbnail'));  ?></a>
 		</div>
 		<div class="post-text  col-md-7 col-lg-7">
 
 			<div class="entry-content">
 				<?php
-					the_excerpt( sprintf(
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
+					// the_excerpt( sprintf(
+					// 	wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
+					// 	the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					// ) );
 					
 				?>
 				<?php	
@@ -77,10 +77,10 @@
 
 			<div class="entry-content only-text">
 				<?php
-					the_excerpt( sprintf(
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
+					// the_excerpt( sprintf(
+					// 	wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'janes-ent' ), array( 'span' => array( 'class' => array() ) ) ),
+					// 	the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					// ) );
 					
 
 					wp_link_pages( array(

@@ -11451,6 +11451,12 @@ img {
   color: #d5d5d5;
 }
 
+@media (max-width: 768px) {
+  .page-header-container .page-header h1 {
+    font-size: 4rem;
+  }
+}
+
 /**
  *
  * Blog Styles

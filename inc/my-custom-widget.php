@@ -41,8 +41,7 @@ class Featured_Widget extends WP_Widget
 		<img class="img-responsive img-circle" src="<?php the_field( 'widget_image', $widget_id ); ?>" alt="">
 	 
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. 
+			<?php the_field( 'widget_text', $widget_id ); ?>
 		</p>
 		<p class="text-center">
 			<a class="btn btn-success" href="<?php the_field( 'widget_button_url', $widget_id ); ?>" title=""><?php the_field("widget_button_text", $widget_id ); ?></a>
